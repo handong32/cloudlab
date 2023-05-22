@@ -9,3 +9,5 @@ systemctl unmask NetworkManager.service
 systemctl start NetworkManager
 
 nmcli con show
+
+dnf -y install netperf
