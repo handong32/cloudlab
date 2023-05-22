@@ -11,3 +11,5 @@ systemctl start NetworkManager
 nmcli con show
 
 dnf -y install netperf
+
+dnf -y install cpupowerutils
