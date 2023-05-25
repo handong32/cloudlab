@@ -14,3 +14,6 @@ echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 # disable dynamic ITR
 ethtool -C ens1f1np1 adaptive-rx off adaptive-tx off
 ethtool -C ens1f1np1 rx-usecs 2 tx-usecs 2
+
+# for Mellanox irq affinity
+wget http://www.mellanox.com/downloads/tools/mlnx_tuning_scripts.tar.gz
