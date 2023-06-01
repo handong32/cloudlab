@@ -20,3 +20,5 @@ sudo modprobe msr
 # dump cpu freq
 sudo rdmsr -a 0x199
 
+# open port
+sudo ufw allow 8080
