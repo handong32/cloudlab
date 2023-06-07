@@ -25,3 +25,6 @@ sudo rdmsr -a 0x199
 
 # open port
 sudo ufw allow 8080
+
+# set irq affinity
+sudo ./set_irq_affinity.sh ens1f1np1
