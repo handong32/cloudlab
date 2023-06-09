@@ -3,7 +3,7 @@
 set -x
 
 sudo apt-get update
-sudo apt-get install -y cpufrequtils msr-tools netperf openjdk-8-jdk-headless libopencv-dev python3-opencv python3-pip uuid-dev
+sudo apt-get install -y cpufrequtils msr-tools netperf openjdk-8-jdk-headless libopencv-dev python3-opencv python3-pip uuid-dev autotools-dev automake tcl libtool
 
 # update opencv symlink
 sudo ln -s /usr/lib/x86_64-linux-gnu/pkgconfig/opencv4.pc /usr/lib/x86_64-linux-gnu/pkgconfig/opencv.pc
