@@ -31,4 +31,5 @@ sudo ufw allow 8080
 sudo systemctl stop ufw
 
 # set irq affinity
-sudo ./set_irq_affinity.sh enp3s0f0
+sudo killall irqbalance
+sudo ./intel_set_irq_affinity.sh -x all enp3s0f0
