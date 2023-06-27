@@ -3,7 +3,7 @@
 set -x
 
 sudo apt-get update
-sudo apt-get install -y cpufrequtils msr-tools netperf openjdk-8-jdk-headless libopencv-dev python3-opencv python3-pip uuid-dev autotools-dev automake tcl libtool libreadline-dev libgtop2-dev bison swig
+sudo apt-get install -y cpufrequtils msr-tools netperf openjdk-8-jdk-headless libopencv-dev python3-opencv python3-pip uuid-dev autotools-dev automake tcl libtool libreadline-dev libgtop2-dev bison swig scons libevent-dev gengetopt libzmq3-dev libevent-dev
 
 pip3 install ax-platform
 
@@ -32,4 +32,5 @@ sudo ufw allow 8080
 sudo systemctl stop ufw
 
 # set irq affinity
+sudo killall irqbalance
 sudo ./set_irq_affinity.sh ens1f1np1
