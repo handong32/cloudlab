@@ -2,6 +2,21 @@
 
 set -x
 
+function static_r320
+{
+    sudo setcap cap_net_admin+ep /usr/sbin/ethtool
+
+    ethtool -c enp8s0d1
+    
+    # disable dynamic ITR
+    ethtool -C enp8s0d1 adaptive-rx off
+    ethtool -C enp8s0d1 rx-usecs 2
+    
+    echo ""
+    ethtool -c enp8s0d1
+    
+}
+
 function static
 {
     sudo setcap cap_net_admin+ep /usr/sbin/ethtool
