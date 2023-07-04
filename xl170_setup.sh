@@ -3,7 +3,7 @@
 set -x
 
 sudo apt-get update
-sudo apt-get install -y cpufrequtils msr-tools netperf openjdk-8-jdk-headless libopencv-dev python3-opencv python3-pip uuid-dev autotools-dev automake tcl libtool libreadline-dev libgtop2-dev bison swig scons libevent-dev gengetopt libzmq3-dev libevent-dev
+sudo apt-get install -y cpufrequtils msr-tools netperf openjdk-8-jdk-headless libopencv-dev python3-opencv python3-pip uuid-dev autotools-dev automake tcl libtool libreadline-dev libgtop2-dev bison swig scons libevent-dev gengetopt libzmq3-dev libevent-dev docker.io
 
 pip install ax-platform==0.3.2
 
