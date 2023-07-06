@@ -6,43 +6,46 @@ function static_r320
 {
     sudo setcap cap_net_admin+ep /usr/sbin/ethtool
 
-    ethtool -c enp8s0d1
+    ieth=$(ifconfig | grep -B1 192.168.1 | grep -o "^\w*")
+    ethtool -c ${ieth}
     
     # disable dynamic ITR
-    ethtool -C enp8s0d1 adaptive-rx off
-    ethtool -C enp8s0d1 rx-usecs 2
+    ethtool -C ${ieth} adaptive-rx off
+    ethtool -C ${ieth} rx-usecs 2
     
     echo ""
-    ethtool -c enp8s0d1
+    ethtool -c ${ieth}
     
 }
 
-function static
+function static_mlnx
 {
     sudo setcap cap_net_admin+ep /usr/sbin/ethtool
 
-    ethtool -c ens1f1np1
+    ieth=$(ifconfig | grep -B1 192.168.1 | grep -o "^\w*")
+    ethtool -c ${ieth}
     
     # disable dynamic ITR
-    ethtool -C ens1f1np1 adaptive-rx off adaptive-tx off
-    ethtool -C ens1f1np1 rx-usecs 2 tx-usecs 2
+    ethtool -C ${ieth} adaptive-rx off adaptive-tx off
+    ethtool -C ${ieth} rx-usecs 2 tx-usecs 2
     
     echo ""
-    ethtool -c ens1f1np1
+    ethtool -c ${ieth}
 }
 
 function dynamic
 {
     sudo setcap cap_net_admin+ep /usr/sbin/ethtool
-
-    ethtool -c ens1f1np1
+    
+    ieth=$(ifconfig | grep -B1 192.168.1 | grep -o "^\w*")
+    ethtool -c ${ieth}
     
     # disable dynamic ITR
-    ethtool -C ens1f1np1 adaptive-rx on adaptive-tx on
+    ethtool -C ${ieth} adaptive-rx on adaptive-tx on
     #ethtool -C ens1f1np1 rx-usecs 2 tx-usecs 2
     
     echo ""
-    ethtool -c ens1f1np1
+    ethtool -c ${ieth}
 }
 
 "$@"
