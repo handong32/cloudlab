@@ -19,6 +19,10 @@ echo off | sudo tee /sys/devices/system/cpu/smt/control
 # disable TurboBoost
 echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
+#add docker group
+sudo usermod -aG docker hand32
+newgrp docker
+
 # enable MSR
 sudo modprobe msr
 
