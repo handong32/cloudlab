@@ -33,4 +33,5 @@ sudo systemctl stop ufw
 
 # set irq affinity
 sudo killall irqbalance
-sudo ./set_irq_affinity.sh ens1f1np1
+ieth=$(ifconfig | grep -B1 192.168.1 | grep -o "^\w*")
+sudo ./set_irq_affinity.sh ${ieth}
