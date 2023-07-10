@@ -21,6 +21,10 @@ sudo rdmsr 0xc0010015
 sudo wrmsr -a 0xc0010015 0x4b000011
 sudo rdmsr 0xc0010015
 
+#add docker group
+sudo usermod -aG docker hand32
+newgrp docker
+
 # enable MSR
 sudo modprobe msr
 
