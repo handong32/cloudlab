@@ -33,16 +33,16 @@ function static_mlnx
     ethtool -c ${ieth}
 }
 
-function dynamic
+function dynamic_xl170
 {
     sudo setcap cap_net_admin+ep /usr/sbin/ethtool
     
     ieth=$(ifconfig | grep -B1 192.168.1 | grep -o "^\w*")
     ethtool -c ${ieth}
     
-    # disable dynamic ITR
+    # enable dynamic ITR
+    ethtool -C ${ieth} rx-usecs 8 tx-usecs 8 rx-frames 128 tx-frames 128 
     ethtool -C ${ieth} adaptive-rx on adaptive-tx on
-    #ethtool -C ens1f1np1 rx-usecs 2 tx-usecs 2
     
     echo ""
     ethtool -c ${ieth}
