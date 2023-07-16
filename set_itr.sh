@@ -63,4 +63,34 @@ function dynamic_d6515
     ethtool -c ${ieth}
 }
 
+function dynamic_rs620
+{
+    sudo setcap cap_net_admin+ep /usr/sbin/ethtool
+    
+    ieth=$(ifconfig | grep -B1 192.168.1 | grep -o "^\w*")
+    ethtool -c ${ieth}
+    
+    # enable dynamic ITR
+    ethtool -C ${ieth} rx-usecs 60 rx-usecs-irq 60
+    ethtool -C ${ieth} adaptive-rx on
+    
+    echo ""
+    ethtool -c ${ieth}
+}
+
+function static_rs620
+{
+    sudo setcap cap_net_admin+ep /usr/sbin/ethtool
+    
+    ieth=$(ifconfig | grep -B1 192.168.1 | grep -o "^\w*")
+    ethtool -c ${ieth}
+    
+    # enable static ITR
+    ethtool -C ${ieth} adaptive-rx off
+    ethtool -C ${ieth} rx-usecs 2 rx-usecs-irq 2
+    
+    echo ""
+    ethtool -c ${ieth}
+}
+
 "$@"
