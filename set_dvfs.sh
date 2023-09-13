@@ -12,9 +12,34 @@ function static
     sudo setcap cap_sys_rawio=ep /usr/sbin/wrmsr 
 }
 
-function dynamic
+# conservative, ondemand, userspace, powersave, performance, schedutil 
+function ondemand
 {
     sudo ./cpufreq-set-all -g ondemand
+    sudo cpufreq-info
+}
+
+function conservative
+{
+    sudo ./cpufreq-set-all -g conservative
+    sudo cpufreq-info
+}
+
+function powersave
+{
+    sudo ./cpufreq-set-all -g powersave
+    sudo cpufreq-info
+}
+
+function performance
+{
+    sudo ./cpufreq-set-all -g performance
+    sudo cpufreq-info
+}
+
+function schedutil
+{
+    sudo ./cpufreq-set-all -g schedutil
     sudo cpufreq-info
 }
 
