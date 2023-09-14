@@ -2,7 +2,7 @@
 
 set -x
 
-function static
+function userspace
 {
     sudo ~/cloudlab/cpufreq-set-all -g userspace
 
