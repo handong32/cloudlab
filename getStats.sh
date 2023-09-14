@@ -27,4 +27,10 @@ tmp=$(ifconfig | grep -A5 10.10.1 | grep 'TX packets' | grep '\w*')
 TXP=$(echo $tmp | cut -f3 -d' ')
 TXB=$(echo $tmp | cut -f5 -d' ')
 
-echo $POLL, $C1, $C1E, $C3, $C6, $RXP, $RXB, $TXP, $TXB
+tmp=$(ifconfig | grep -A5 128.110.96 | grep 'RX packets' | grep '\w*')
+ERXB=$(echo $tmp | cut -f5 -d' ')
+
+tmp=$(ifconfig | grep -A5 128.110.96 | grep 'TX packets' | grep '\w*')
+ETXB=$(echo $tmp | cut -f5 -d' ')
+
+echo $POLL, $C1, $C1E, $C3, $C6, $RXP, $RXB, $TXP, $TXB, $ERXB, $ETXB
