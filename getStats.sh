@@ -9,6 +9,10 @@ RXP=0
 RXB=0
 TXP=0
 TXB=0
+ERXP=0
+ERXB=0
+ETXP=0
+ETXB=0
 
 for (( c=0; c<$(nproc); c++ ))
 do    
@@ -28,9 +32,11 @@ TXP=$(echo $tmp | cut -f3 -d' ')
 TXB=$(echo $tmp | cut -f5 -d' ')
 
 tmp=$(ifconfig | grep -A5 128.110.96 | grep 'RX packets' | grep '\w*')
+ERXP=$(echo $tmp | cut -f3 -d' ')
 ERXB=$(echo $tmp | cut -f5 -d' ')
 
 tmp=$(ifconfig | grep -A5 128.110.96 | grep 'TX packets' | grep '\w*')
+ETXP=$(echo $tmp | cut -f3 -d' ')
 ETXB=$(echo $tmp | cut -f5 -d' ')
 
-echo $POLL, $C1, $C1E, $C3, $C6, $RXP, $RXB, $TXP, $TXB, $ERXB, $ETXB
+echo $POLL, $C1, $C1E, $C3, $C6, $RXP, $RXB, $TXP, $TXB, $ERXP, $ERXB, $ETXP, $ETXB
