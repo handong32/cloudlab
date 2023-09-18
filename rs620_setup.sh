@@ -3,7 +3,7 @@
 set -x
 
 sudo apt-get update
-sudo apt-get install -y cpufrequtils msr-tools netperf openjdk-8-jdk-headless libopencv-dev python3-opencv python3-pip uuid-dev autotools-dev automake tcl libtool libreadline-dev libgtop2-dev bison swig scons libevent-dev gengetopt libzmq3-dev libevent-dev docker.io
+sudo apt-get install -y cpufrequtils msr-tools netperf openjdk-8-jdk-headless libopencv-dev python3-opencv python3-pip uuid-dev autotools-dev automake tcl libtool libreadline-dev libgtop2-dev bison swig scons libevent-dev gengetopt libzmq3-dev libevent-dev #docker.io
 
 pip install ax-platform==0.3.2
 
@@ -26,7 +26,7 @@ sudo modprobe msr
 sudo rdmsr -a 0x199
 
 # open port
-sudo ufw allow 8080
+#sudo ufw allow 8080
 
 # actually, disable firewall
 sudo systemctl stop ufw
@@ -37,5 +37,5 @@ ieth=$(ifconfig | grep -B1 192.168.1 | grep -o "^\w*")
 sudo ./set_irq_affinity.sh ${ieth}
 
 #add docker group
-sudo usermod -aG docker hand32
-newgrp docker
+#sudo usermod -aG docker hand32
+#newgrp docker
