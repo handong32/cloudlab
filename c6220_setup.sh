@@ -32,4 +32,6 @@ sudo systemctl stop ufw
 
 # set irq affinity
 sudo killall irqbalance
-sudo ./intel_set_irq_affinity.sh -x all enp3s0f0
+ieth=$(ifconfig | grep -B1 10.10.1 | grep -o "^\w*")
+sudo ./set_irq_affinity.sh ${ieth}
+
