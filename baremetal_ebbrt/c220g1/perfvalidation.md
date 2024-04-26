@@ -97,17 +97,23 @@ ans: 30000000, INS: 150175979, REF_CYC: 192305304, LLC: 38
 read_msr: 0x309
 perfevent::fixed_instructions: 0x309
 read_msr: 0x38d
-PerfCounter() pwrite: fixed_ctrl.val=0xb3 kIa32FixedCtrCtrlMsr=0x38d
+PerfCounter() pwrite: fixed_ctrl.val=0xb7 kIa32FixedCtrCtrlMsr=0x38d
 Start pwrite: perf_global_ctrl=0x100000000 kIa32PerfGlobalCtrlMsr=0x38f
 run loop start
 read_msr: 0x309
 read_msr: 0x309
 run loop stop
+ans: 10000, INS: 63176
+run loop start
+read_msr: 0x309
+read_msr: 0x309
+run loop stop
+ans: 30000, INS: 133744
 Stop pwrite: perf_global_ctrl=0x0 kIa32PerfGlobalCtrlMsr=0x38f
-ans: 20000, INS: 113745
 ~PerfCounter pwrite: perf_global_ctrl=0x0 kIa32PerfGlobalCtrlMsr=0x38f
 read_msr: 0x38d
-~PerfCounter() pwrite: fixed_ctrl.val=0x7ffe76e8c6f8 kIa32FixedCtrCtrlMsr=0x38d
+~PerfCounter() pwrite: fixed_ctrl.val=0x7fffdc12f0bc kIa32FixedCtrCtrlMsr=0x38d
+
 
 
 
