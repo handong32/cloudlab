@@ -95,17 +95,20 @@ root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 30000000
 ans: 30000000, INS: 150175979, REF_CYC: 192305304, LLC: 38
 
 read_msr: 0x309
+perfevent::fixed_instructions: 0x309
 read_msr: 0x38d
-PerfCounter() pwrite: fixed_ctrl.val=0xb7 kIa32FixedCtrCtrlMsr=0x38d
+PerfCounter() pwrite: fixed_ctrl.val=0xb3 kIa32FixedCtrCtrlMsr=0x38d
 Start pwrite: perf_global_ctrl=0x100000000 kIa32PerfGlobalCtrlMsr=0x38f
 run loop start
+read_msr: 0x309
+read_msr: 0x309
 run loop stop
 Stop pwrite: perf_global_ctrl=0x0 kIa32PerfGlobalCtrlMsr=0x38f
-read_msr: 0x309
-ans: 2000000, INS: 10047055
+ans: 20000, INS: 113745
 ~PerfCounter pwrite: perf_global_ctrl=0x0 kIa32PerfGlobalCtrlMsr=0x38f
 read_msr: 0x38d
-~PerfCounter() pwrite: fixed_ctrl.val=0xb4 kIa32FixedCtrCtrlMsr=0x38d
+~PerfCounter() pwrite: fixed_ctrl.val=0x7ffe76e8c6f8 kIa32FixedCtrCtrlMsr=0x38d
+
 
 
 ~~~
