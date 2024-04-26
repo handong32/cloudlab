@@ -71,5 +71,27 @@ ans = 30000000
 150907221,,instructions,81642135,100.00,,
 90,,cache-misses,81642135,100.00,,
 195139200,,ref-cycles,81642135,100.00,,
+~~~
+
+## Linux with Custom PCM tool
+~~~
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 10000000
+ans: 10000000, INS: 50124693, REF_CYC: 75721728, LLC: 64
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 10000000
+ans: 10000000, INS: 50081833, REF_CYC: 74427552, LLC: 12
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 10000000
+ans: 10000000, INS: 50083781, REF_CYC: 73734120, LLC: 40
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 20000000
+ans: 20000000, INS: 100192365, REF_CYC: 136113744, LLC: 68
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 20000000
+ans: 20000000, INS: 100168728, REF_CYC: 132728472, LLC: 103
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 20000000
+ans: 20000000, INS: 100146979, REF_CYC: 136387152, LLC: 59
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 30000000
+ans: 30000000, INS: 150187337, REF_CYC: 193976688, LLC: 41
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 30000000
+ans: 30000000, INS: 150178428, REF_CYC: 194271336, LLC: 64
+root@serverebbrt:~/peakler/experiments/microbenchmarks# ./loop 30000000
+ans: 30000000, INS: 150175979, REF_CYC: 192305304, LLC: 38
 
 ~~~
