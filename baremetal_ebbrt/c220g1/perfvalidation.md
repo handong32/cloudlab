@@ -113,8 +113,106 @@ Stop pwrite: perf_global_ctrl=0x0 kIa32PerfGlobalCtrlMsr=0x38f
 ~PerfCounter pwrite: perf_global_ctrl=0x0 kIa32PerfGlobalCtrlMsr=0x38f
 read_msr: 0x38d
 ~PerfCounter() pwrite: fixed_ctrl.val=0x7fffdc12f0bc kIa32FixedCtrCtrlMsr=0x38d
+~~~
 
-
-
-
+## Linux with libpcf
+~~~
+pfc: Kernel Module loading on processor Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz (Family 6 (6), Model 63 (03F), Stepping 2 (2))
+pfc: cpuid.0x0.0x0:        EAX=0000000f, EBX=756e6547, ECX=6c65746e, EDX=49656e69
+pfc: cpuid.0x1.0x0:        EAX=000306f2, EBX=09100800, ECX=7ffefbff, EDX=bfebfbff
+pfc: cpuid.0x6.0x0:        EAX=00000077, EBX=00000002, ECX=00000009, EDX=00000000
+pfc: cpuid.0xA.0x0:        EAX=07300403, EBX=00000000, ECX=00000000, EDX=00000603
+pfc: cpuid.0x80000000.0x0: EAX=80000008, EBX=00000000, ECX=00000000, EDX=00000000
+pfc: cpuid.0x80000001.0x0: EAX=00000000, EBX=00000000, ECX=00000021, EDX=2c100800
+pfc: cpuid.0x80000002.0x0: EAX=65746e49, EBX=2952286c, ECX=6f655820, EDX=2952286e
+pfc: cpuid.0x80000003.0x0: EAX=55504320, EBX=2d354520, ECX=30333632, EDX=20337620
+pfc: cpuid.0x80000004.0x0: EAX=2e322040, EBX=48473034, ECX=0000007a, EDX=00000000
+pfcRDMSR addr=0x345
+pfc: PM Arch Version:      3
+pfc: Fixed-function  PMCs: 3	Mask 0000ffffffffffff (48 bits)
+pfc: General-purpose PMCs: 4	Mask 0000ffffffffffff (48 bits)
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x0
+pfcRDMSR addr=0x38d
+pfcWRMSR: add=0x38d newVal=0x0
+pfcRDMSR addr=0x309
+pfcWRMSR: add=0x309 newVal=0x0
+pfcRDMSR addr=0x30a
+pfcWRMSR: add=0x30a newVal=0x0
+pfcRDMSR addr=0x30b
+pfcWRMSR: add=0x30b newVal=0x0
+pfcInitCounters CPU 3 done
+pfc: Module pfc loaded successfully. Make sure to execute
+pfc:     modprobe -ar iTCO_wdt iTCO_vendor_support
+pfc:     echo 0 > /proc/sys/kernel/nmi_watchdog
+pfc: and blacklist iTCO_vendor_support and iTCO_wdt, since the CR4.PCE register
+pfc: initialization is periodically undone by an unknown agent.
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x0
+pfcRDMSR addr=0x38d
+pfcRDMSR addr=0x38d
+pfcWRMSR: add=0x38d newVal=0x2
+pfcRDMSR addr=0x38d
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x100000000
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x100000000
+pfcRDMSR addr=0x38d
+pfcRDMSR addr=0x38d
+pfcWRMSR: add=0x38d newVal=0x22
+pfcRDMSR addr=0x38d
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x300000000
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x300000000
+pfcRDMSR addr=0x38d
+pfcRDMSR addr=0x38d
+pfcWRMSR: add=0x38d newVal=0x222
+pfcRDMSR addr=0x38d
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x700000000
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x700000000
+pfcRDMSR addr=0x186
+pfcWRMSR: add=0x186 newVal=0x0
+pfcRDMSR addr=0x186
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x700000000
+pfcRDMSR addr=0x187
+pfcWRMSR: add=0x187 newVal=0x0
+pfcRDMSR addr=0x187
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x700000000
+pfcRDMSR addr=0x188
+pfcWRMSR: add=0x188 newVal=0x0
+pfcRDMSR addr=0x188
+pfcRDMSR addr=0x38f
+pfcRDMSR addr=0x38f
+pfcWRMSR: add=0x38f newVal=0x700000000
+pfcRDMSR addr=0x189
+pfcWRMSR: add=0x189 newVal=0x0
+pfcRDMSR addr=0x189
+pfcRDMSR addr=0x309
+pfcWRMSR: add=0x309 newVal=0x0
+pfcRDMSR addr=0x30a
+pfcWRMSR: add=0x30a newVal=0x0
+pfcRDMSR addr=0x30b
+pfcWRMSR: add=0x30b newVal=0x0
+pfcRDMSR addr=0x4c1
+pfcWRMSR: add=0x4c1 newVal=0x0
+pfcRDMSR addr=0x4c2
+pfcWRMSR: add=0x4c2 newVal=0x0
+pfcRDMSR addr=0x4c3
+pfcWRMSR: add=0x4c3 newVal=0x0
+pfcRDMSR addr=0x4c4
+pfcWRMSR: add=0x4c4 newVal=0x0
 ~~~
