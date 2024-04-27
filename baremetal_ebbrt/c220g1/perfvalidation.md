@@ -354,3 +354,49 @@ echo "start,100" | socat - TCP4:192.168.1.9:5002 && sleep 30 && echo "stop,100" 
 [STATS] Core 15, Joules 6421979, Instructions 2164, Cycles 68840, RefCycles 89832
 7550644*0.00006104/30.0 => 15.3630436587
 ~~~
+
+## EbbRT RDTSC Validation
+~~~
+echo "start,100" | socat - TCP4:192.168.1.9:5002 && sleep 10 && echo "stop,100" | socat - TCP4:192.168.1.9:5002
+
+[STATS] Core 0, Rdtsc 25168876347, Joules 2606358, Instructions 4107325, Cycles 65910571, RefCycles 117397560
+[STATS] Core 1, Rdtsc 25194635379, Joules 2609921, Instructions 53744, Cycles 26597004, RefCycles 31221216
+[STATS] Core 2, Rdtsc 25219696755, Joules 2613517, Instructions 2130, Cycles 16578956, RefCycles 22031040
+[STATS] Core 3, Rdtsc 25244528151, Joules 2617090, Instructions 2130, Cycles 16679442, RefCycles 22107768
+[STATS] Core 4, Rdtsc 25269356427, Joules 2621016, Instructions 2130, Cycles 16367519, RefCycles 21801456
+[STATS] Core 5, Rdtsc 25294185573, Joules 2624670, Instructions 2130, Cycles 16362088, RefCycles 21766392
+[STATS] Core 6, Rdtsc 25319013066, Joules 2628347, Instructions 2130, Cycles 16251826, RefCycles 21637704
+[STATS] Core 7, Rdtsc 25343842761, Joules 2632529, Instructions 2130, Cycles 16481577, RefCycles 21942552
+[STATS] Core 8, Rdtsc 25368671712, Joules 1929455, Instructions 9107, Cycles 65291, RefCycles 130368
+[STATS] Core 9, Rdtsc 25392337340, Joules 1932542, Instructions 2146, Cycles 39841, RefCycles 70704
+[STATS] Core 10, Rdtsc 25415762738, Joules 1935484, Instructions 2208, Cycles 47316, RefCycles 79536
+[STATS] Core 11, Rdtsc 25439422922, Joules 1938783, Instructions 2229, Cycles 53521, RefCycles 85080
+[STATS] Core 12, Rdtsc 25463077162, Joules 1942174, Instructions 2208, Cycles 57438, RefCycles 88032
+[STATS] Core 13, Rdtsc 25486730003, Joules 1945194, Instructions 2229, Cycles 64456, RefCycles 95016
+[STATS] Core 14, Rdtsc 25510389606, Joules 1948775, Instructions 2167, Cycles 70259, RefCycles 100608
+[STATS] Core 15, Rdtsc 25534283567, Joules 1952335, Instructions 2270, Cycles 76215, RefCycles 106128
+100rt 1 TcpCommand::Receive() 
+    
+
+100p  1 TcpCommand::Receive() 
+    
+echo "start,100" | socat - TCP4:192.168.1.9:5002 && sleep 30 && echo "stop,100" | socat - TCP4:192.168.1.9:5002
+
+[STATS] Core 0, Rdtsc 73052185245, Joules 7377846, Instructions 11907756, Cycles 189068659, RefCycles 338319984
+[STATS] Core 1, Rdtsc 73078417308, Joules 7381789, Instructions 36694, Cycles 54062270, RefCycles 68062296
+Allocated fffffffeee6fc000 - fffffffeeeefbfff
+[STATS] Core 2, Rdtsc 73114387893, Joules 7387160, Instructions 2130, Cycles 45970520, RefCycles 61107744
+[STATS] Core 3, Rdtsc 73139218695, Joules 7390718, Instructions 15099, Cycles 46260406, RefCycles 61355208
+[STATS] Core 4, Rdtsc 73164281949, Joules 7394771, Instructions 2130, Cycles 45356841, RefCycles 60432552
+[STATS] Core 5, Rdtsc 73189111383, Joules 7398416, Instructions 1149, Cycles 45323305, RefCycles 60324144
+[STATS] Core 6, Rdtsc 3213630791979, Joules 51237526, Instructions 70093, Cycles 129514731, RefCycles 150671424
+[STATS] Core 7, Rdtsc 3213632192823, Joules 51237517, Instructions 77099, Cycles 130576793, RefCycles 152104800
+[STATS] Core 8, Rdtsc 3213633601928, Joules 35556577, Instructions 74076, Cycles 51004229, RefCycles 48115560
+[STATS] Core 9, Rdtsc 3213635713306, Joules 35556772, Instructions 66116, Cycles 50990143, RefCycles 47282136
+[STATS] Core 10, Rdtsc 3213638090236, Joules 35557521, Instructions 66629, Cycles 51509152, RefCycles 47766168
+[STATS] Core 11, Rdtsc 3213640389757, Joules 35558146, Instructions 66893, Cycles 51768834, RefCycles 48005688
+[STATS] Core 12, Rdtsc 3213642735542, Joules 35558703, Instructions 66882, Cycles 51743183, RefCycles 47977488
+[STATS] Core 13, Rdtsc 3213645086611, Joules 35559611, Instructions 67074, Cycles 51763658, RefCycles 47998656
+[STATS] Core 14, Rdtsc 3213647424612, Joules 35559607, Instructions 67204, Cycles 52018959, RefCycles 48236880
+[STATS] Core 15, Rdtsc 3213649527316, Joules 35560195, Instructions 74020, Cycles 52045940, RefCycles 48288312
+~~~
