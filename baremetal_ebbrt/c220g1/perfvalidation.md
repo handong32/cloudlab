@@ -422,3 +422,54 @@ Core 0 RDTSC = 73052185245
 73052185245/(2394230.0*1000.0)
 30.51176588924205276853 seconds
 ~~~
+
+## EbbRT DVFS Validation
+~~~
+$~ echo "dvfs,8192" | socat - TCP4:192.168.1.9:5002 && echo "start,100" | socat - TCP4:192.168.1.9:5002 && taskset -c 15 ~/mutilate/mutilate --binary -s 192.168.1.9 --noload --agent=192.168.1.2,192.168.1.3,192.168.1.4,192.168.1.5 --threads=1 --keysize=fb_key --valuesize=fb_value --iadist=fb_ia --update=0.25 --depth=4 --measure_depth=1 --connections=8 --measure_connections=32 --measure_qps=2000 --qps=2000000 --time=20 && ecetcounters,0" | socat - TCP4:192.168.1.9:5002
+
+dvfs 8192
+[STATS] Core 0, Rdtsc 52775199561, Joules 13947931, Instructions 20004469560, Cycles 33801214927, RefCycles 31214121000
+[STATS] Core 1, Rdtsc 52803279468, Joules 13953761, Instructions 18782478760, Cycles 32111376399, RefCycles 29641940712
+[STATS] Core 2, Rdtsc 52831356840, Joules 13959124, Instructions 19307647552, Cycles 32573597613, RefCycles 30069723288
+[STATS] Core 3, Rdtsc 52859437497, Joules 13964998, Instructions 19313428912, Cycles 32966666475, RefCycles 30432419376
+[STATS] Core 4, Rdtsc 52887518619, Joules 13970857, Instructions 19686685906, Cycles 33010838208, RefCycles 30474658536
+[STATS] Core 5, Rdtsc 52915597410, Joules 13976215, Instructions 19835982756, Cycles 33818033126, RefCycles 31220391816
+[STATS] Core 6, Rdtsc 52943675952, Joules 13982093, Instructions 19157938687, Cycles 32097348846, RefCycles 29628960024
+[STATS] Core 7, Rdtsc 52971755028, Joules 13987959, Instructions 19824016265, Cycles 33686334285, RefCycles 31099056144
+[STATS] Core 8, Rdtsc 52999837496, Joules 12702133, Instructions 20087856145, Cycles 37626881005, RefCycles 34735790448
+[STATS] Core 9, Rdtsc 53027915095, Joules 12707119, Instructions 18595120134, Cycles 32623009061, RefCycles 30112532112
+[STATS] Core 10, Rdtsc 53055985532, Joules 12712163, Instructions 19451417409, Cycles 33538694872, RefCycles 30957366024
+[STATS] Core 11, Rdtsc 53084295568, Joules 12717059, Instructions 19538254005, Cycles 34187724884, RefCycles 31559174424
+[STATS] Core 12, Rdtsc 53112592260, Joules 12722413, Instructions 19505219260, Cycles 33691977346, RefCycles 31099069272
+[STATS] Core 13, Rdtsc 53140897664, Joules 12727717, Instructions 19362088430, Cycles 34049624277, RefCycles 31433771544
+[STATS] Core 14, Rdtsc 53169192695, Joules 12733015, Instructions 19119805682, Cycles 33398216068, RefCycles 30829387392
+[STATS] Core 15, Rdtsc 53197503660, Joules 12738377, Instructions 19414181198, Cycles 33861250426, RefCycles 31259336280
+  
+         getcounters: 22.0427 1626.72 310986590661 537042787818 495767698392     
+
+
+$~ echo "dvfs,3072" | socat - TCP4:192.168.1.9:5002 && echo "start,100" | socat - TCP4:192.168.1.9:5002 && taskset -c 15 ~/mutilate/mutilate --binary -s 192.168.1.9 --noload --agent=192.168.1.2,192.168.1.3,192.168.1.4,192.168.1.5 --threads=1 --keysize=fb_key --valuesize=fb_value --iadist=fb_ia --update=0.25 --depth=4 --measure_depth=1 --connections=8 --measure_connections=32 --measure_qps=2000 --qps=2000000 --time=20 && echo "stop,100" | socat - TCP4:192.168.1.9:5002 && echo "getcounters,0" | socat - TCP4:192.168.1.9:5002
+
+dvfs 3072
+
+[STATS] Core 0, Rdtsc 52774494712, Joules 13252971, Instructions 19541766577, Cycles 31342745374, RefCycles 31352855328
+[STATS] Core 1, Rdtsc 52802572888, Joules 13258829, Instructions 19644786704, Cycles 32052663142, RefCycles 32055247128
+[STATS] Core 2, Rdtsc 52830654532, Joules 13264023, Instructions 19610302305, Cycles 31455346108, RefCycles 31458823488
+[STATS] Core 3, Rdtsc 52858731744, Joules 13269713, Instructions 18840607792, Cycles 30924008023, RefCycles 30925517064
+[STATS] Core 4, Rdtsc 52886807604, Joules 13275506, Instructions 19341185511, Cycles 31553425405, RefCycles 31557199704
+[STATS] Core 5, Rdtsc 52914887348, Joules 13281211, Instructions 18526889411, Cycles 29591284382, RefCycles 29594388840
+[STATS] Core 6, Rdtsc 52942966188, Joules 13286421, Instructions 20094905849, Cycles 32294351769, RefCycles 32299135728
+[STATS] Core 7, Rdtsc 52971046432, Joules 13292204, Instructions 19302403438, Cycles 31004673720, RefCycles 31007387640
+[STATS] Core 8, Rdtsc 52999123640, Joules 11725552, Instructions 19494390556, Cycles 34412360199, RefCycles 34413686016
+[STATS] Core 9, Rdtsc 53027206048, Joules 11730301, Instructions 18832688659, Cycles 31897066479, RefCycles 31895226480
+[STATS] Core 10, Rdtsc 53055270688, Joules 11734666, Instructions 19504790458, Cycles 32022281241, RefCycles 32024977800
+[STATS] Core 11, Rdtsc 53083578024, Joules 11739555, Instructions 18644216176, Cycles 31003179381, RefCycles 31004676912
+[STATS] Core 12, Rdtsc 53111873104, Joules 11744350, Instructions 19257062115, Cycles 31807424138, RefCycles 31807297320
+[STATS] Core 13, Rdtsc 53140178336, Joules 11749144, Instructions 19631819314, Cycles 32621109512, RefCycles 32623644072
+[STATS] Core 14, Rdtsc 53168473264, Joules 11753956, Instructions 19906141028, Cycles 32699977803, RefCycles 32700393264
+[STATS] Core 15, Rdtsc 53196780832, Joules 11758359, Instructions 20129039264, Cycles 33029544043, RefCycles 33031977576
+0etcounters ommand::Receive() 
+  
+
+         getcounters: 22.0424 1524.69 310302995157 509711440719 509752434360
+~~~
