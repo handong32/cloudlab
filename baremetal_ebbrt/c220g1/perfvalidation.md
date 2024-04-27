@@ -432,6 +432,10 @@ echo "start,100" | socat - TCP4:192.168.1.9:5002 && sleep 30 && echo "stop,100" 
 
 ## EbbRT RDTSC Validation
 ~~~
+TSC 2394.230 MHz
+
+RDTSC * (1.0/(2394230.0*1000.0))
+
 echo "start,100" | socat - TCP4:192.168.1.9:5002 && sleep 10 && echo "stop,100" | socat - TCP4:192.168.1.9:5002
 
 [STATS] Core 0, Rdtsc 25168876347, Joules 2606358, Instructions 4107325, Cycles 65910571, RefCycles 117397560
@@ -452,6 +456,10 @@ echo "start,100" | socat - TCP4:192.168.1.9:5002 && sleep 10 && echo "stop,100" 
 [STATS] Core 15, Rdtsc 25534283567, Joules 1952335, Instructions 2270, Cycles 76215, RefCycles 106128
 100rt 1 TcpCommand::Receive() 
     
+Core 0 RDTSC = 25168876347
+
+25168876347/(2394230.0*1000.0)
+10.51230514486912284951 seconds
 
 100p  1 TcpCommand::Receive() 
     
@@ -474,4 +482,9 @@ Allocated fffffffeee6fc000 - fffffffeeeefbfff
 [STATS] Core 13, Rdtsc 3213645086611, Joules 35559611, Instructions 67074, Cycles 51763658, RefCycles 47998656
 [STATS] Core 14, Rdtsc 3213647424612, Joules 35559607, Instructions 67204, Cycles 52018959, RefCycles 48236880
 [STATS] Core 15, Rdtsc 3213649527316, Joules 35560195, Instructions 74020, Cycles 52045940, RefCycles 48288312
+
+Core 0 RDTSC = 73052185245
+
+73052185245/(2394230.0*1000.0)
+30.51176588924205276853 seconds
 ~~~
