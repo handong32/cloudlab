@@ -295,3 +295,55 @@ Answer 2000000
 [STATS] Core 14, Joules 238714, Instructions 2164, Cycles 70160, RefCycles 96456
 [STATS] Core 15, Joules 241572, Instructions 2143, Cycles 75910, RefCycles 101544
 ~~~
+
+## EbbRT PCM idle
+~~~
+Power units = 0.125W                                                                                                                                                                                                                         
+CPU Energy units = 0.00006104J                                                                                                                                                                                                               
+DRAM Energy units = 0.00006104J                                                                                                                                                                                                              
+Time units = 0.00097656s    
+
+echo "start,100" | socat - TCP4:192.168.1.9:5002 && sleep 10 && echo "stop,100" | socat - TCP4:192.168.1.9:5002
+                                                                                                                                                                                                                                             
+[STATS] Core 0, Joules 2630243, Instructions 4105502, Cycles 65748120, RefCycles 117320376                                                                                                                                                   
+[STATS] Core 1, Joules 2633460, Instructions 50401, Cycles 26619547, RefCycles 30900696                                                                                                                                                      
+[STATS] Core 2, Joules 2636696, Instructions 2127, Cycles 16185040, RefCycles 21455832                                                                                                                                                       
+[STATS] Core 3, Joules 2639552, Instructions 2127, Cycles 16378729, RefCycles 21736992                                                                                                                                                       
+[STATS] Core 4, Joules 2642778, Instructions 2127, Cycles 15313227, RefCycles 20457120                                                                                                                                                       
+[STATS] Core 5, Joules 2645652, Instructions 2127, Cycles 15773308, RefCycles 20952048                                                                                                                                                       
+[STATS] Core 6, Joules 2648979, Instructions 11635, Cycles 15822026, RefCycles 21012504                                                                                                                                                      
+[STATS] Core 7, Joules 2652391, Instructions 2127, Cycles 16144488, RefCycles 21495360                                                                                                                                                       
+[STATS] Core 8, Joules 2194500, Instructions 2164, Cycles 27965, RefCycles 55848                                                                                                                                                             
+[STATS] Core 9, Joules 2197091, Instructions 2164, Cycles 31794, RefCycles 54600                                                                                                                                                             
+[STATS] Core 10, Joules 2199449, Instructions 2143, Cycles 39604, RefCycles 62616                                                                                                                                                            
+[STATS] Core 11, Joules 2202263, Instructions 2164, Cycles 45481, RefCycles 68784                                                                                                                                                            
+[STATS] Core 12, Joules 2205479, Instructions 2164, Cycles 49643, RefCycles 71544                                                                                                                                                            
+[STATS] Core 13, Joules 2208357, Instructions 2165, Cycles 51282, RefCycles 74544                                                                                                                                                            
+[STATS] Core 14, Joules 2211213, Instructions 2164, Cycles 55475, RefCycles 77352                                                                                                                                                            
+[STATS] Core 15, Joules 2214062, Instructions 2143, Cycles 62843, RefCycles 84168                                                                                                                                                            
+100rt 1 TcpCommand::Receive()                                                                                                                                                                                                                
+
+2630243 * 0.00006104 / 10. =>  16.055003272                                                                                                                                                                                                              
+                                                                                                                                                                                                                                             
+100p  1 TcpCommand::Receive()                                                                                                                                                                                                                
+                                                                                                                                                                                                                                             
+echo "start,100" | socat - TCP4:192.168.1.9:5002 && sleep 30 && echo "stop,100" | socat - TCP4:192.168.1.9:5002
+                                                                                                                                         
+[STATS] Core 0, Joules 7550644, Instructions 11910264, Cycles 189945501, RefCycles 339111744                                                                                                                                                 
+[STATS] Core 1, Joules 7553876, Instructions 51322, Cycles 55434776, RefCycles 69355728                                                                                                                                                      
+[STATS] Core 2, Joules 7557067, Instructions 2127, Cycles 46901522, RefCycles 62352528                                                                                                                                                       
+[STATS] Core 3, Joules 7559933, Instructions 2127, Cycles 47163694, RefCycles 62542848                                                                                                                                                       
+[STATS] Core 4, Joules 7563160, Instructions 2127, Cycles 46275634, RefCycles 61666824                                                                                                                                                       
+[STATS] Core 5, Joules 7566031, Instructions 2127, Cycles 46246633, RefCycles 61557648                                                                                                                                                       
+[STATS] Core 6, Joules 7568888, Instructions 2127, Cycles 45930394, RefCycles 61197552                                                                                                                                                       
+[STATS] Core 7, Joules 7572134, Instructions 2127, Cycles 46564971, RefCycles 62042472                                                                                                                                                       
+[STATS] Core 8, Joules 6402318, Instructions 2164, Cycles 27301, RefCycles  54528                                                                                                                                                             
+[STATS] Core 9, Joules 6404929, Instructions 9038, Cycles 65018, RefCycles 114312                                                                                                                                                            
+[STATS] Core 10, Joules 6407662, Instructions 2143, Cycles 46054, RefCycles 68520                                                                                                                                                            
+[STATS] Core 11, Joules 6410521, Instructions 2164, Cycles 52163, RefCycles 74760                                                                                                                                                            
+[STATS] Core 12, Joules 6413385, Instructions 2164, Cycles 55704, RefCycles 77280                                                                                                                                                            
+[STATS] Core 13, Joules 6416257, Instructions 2164, Cycles 56115, RefCycles 77736                                                                                                                                                            
+[STATS] Core 14, Joules 6419125, Instructions 2164, Cycles 63255, RefCycles 84552                                                                                                                                                            
+[STATS] Core 15, Joules 6421979, Instructions 2164, Cycles 68840, RefCycles 89832
+7550644*0.00006104/30.0 => 15.3630436587
+~~~
