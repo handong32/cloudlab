@@ -216,3 +216,82 @@ pfcWRMSR: add=0x4c3 newVal=0x0
 pfcRDMSR addr=0x4c4
 pfcWRMSR: add=0x4c4 newVal=0x0
 ~~~
+
+## EbbRT PCM
+~~~
+Core 1 runins 1000000
+Answer 1000000
+100p  1 TcpCommand::Receive() 
+    
+
+[STATS] Core 0, Joules 249361, Instructions 400170, Cycles 6355809, RefCycles 11200680
+[STATS] Core 1, Joules 252567, Instructions 9111376, Cycles 54131879, RefCycles 50587224
+[STATS] Core 2, Joules 254001, Instructions 2890, Cycles 1538291, RefCycles 2032080
+[STATS] Core 3, Joules 257202, Instructions 2754, Cycles 1556452, RefCycles 2052024
+[STATS] Core 4, Joules 260097, Instructions 2802, Cycles 1459352, RefCycles 1934880
+[STATS] Core 5, Joules 262949, Instructions 2754, Cycles 1513198, RefCycles 1995144
+[STATS] Core 6, Joules 265784, Instructions 2846, Cycles 1520217, RefCycles 1997640
+[STATS] Core 7, Joules 269041, Instructions 2754, Cycles 1547520, RefCycles 2040192
+[STATS] Core 8, Joules 231590, Instructions 2827, Cycles 41139, RefCycles 82200
+[STATS] Core 9, Joules 234199, Instructions 2875, Cycles 40305, RefCycles 70800
+[STATS] Core 10, Joules 236564, Instructions 2832, Cycles 47741, RefCycles 78792
+[STATS] Core 11, Joules 239392, Instructions 2940, Cycles 54985, RefCycles 85704
+[STATS] Core 12, Joules 242249, Instructions 16498, Cycles 101462, RefCycles 179760
+[STATS] Core 13, Joules 245096, Instructions 2883, Cycles 58638, RefCycles 87480
+[STATS] Core 14, Joules 247960, Instructions 2791, Cycles 66263, RefCycles 96096
+[STATS] Core 15, Joules 250837, Instructions 2968, Cycles 72221, RefCycles 101952
+100rt 1 TcpCommand::Receive() 
+    
+
+1000000 TcpCommand::Receive() 
+  
+
+Core 1 runins 2000000
+Answer 2000000
+100p  1 TcpCommand::Receive() 
+    
+
+[STATS] Core 0, Joules 256573, Instructions 399939, Cycles 6261924, RefCycles 11135448
+[STATS] Core 1, Joules 259420, Instructions 18095668, Cycles 48460968, RefCycles 46019448
+[STATS] Core 2, Joules 262660, Instructions 2127, Cycles 1452859, RefCycles 1925064
+[STATS] Core 3, Joules 265866, Instructions 2127, Cycles 1469353, RefCycles 1941192
+[STATS] Core 4, Joules 268747, Instructions 2127, Cycles 1412782, RefCycles 1873920
+[STATS] Core 5, Joules 271602, Instructions 2127, Cycles 1441749, RefCycles 1904184
+[STATS] Core 6, Joules 274454, Instructions 2127, Cycles 1445676, RefCycles 1907016
+[STATS] Core 7, Joules 277434, Instructions 2127, Cycles 1468162, RefCycles 1939296
+[STATS] Core 8, Joules 221829, Instructions 2164, Cycles 53664, RefCycles 89712
+[STATS] Core 9, Joules 224082, Instructions 2164, Cycles 53837, RefCycles 78576
+[STATS] Core 10, Joules 226778, Instructions 8933, Cycles 91774, RefCycles 146496
+[STATS] Core 11, Joules 229457, Instructions 2164, Cycles 69369, RefCycles 94368
+[STATS] Core 12, Joules 232157, Instructions 2164, Cycles 66888, RefCycles 91248
+[STATS] Core 13, Joules 234836, Instructions 2164, Cycles 73148, RefCycles 97104
+[STATS] Core 14, Joules 237672, Instructions 2164, Cycles 79956, RefCycles 103680
+[STATS] Core 15, Joules 240535, Instructions 9040, Cycles 117279, RefCycles 148056
+100rt 1 TcpCommand::Receive() 
+    
+
+1300000 TcpCommand::Receive() 
+   
+
+Core 13 runins 2000000
+Answer 2000000
+100p  1 TcpCommand::Receive() 
+    
+
+[STATS] Core 0, Joules 256391, Instructions 399962, Cycles 6321716, RefCycles 11244504
+[STATS] Core 1, Joules 259258, Instructions 82995, Cycles 25329975, RefCycles 24863304
+[STATS] Core 2, Joules 262464, Instructions 2127, Cycles 1531734, RefCycles 2029512
+[STATS] Core 3, Joules 265310, Instructions 2127, Cycles 1546857, RefCycles 2041080
+[STATS] Core 4, Joules 268181, Instructions 2127, Cycles 1522004, RefCycles 2016096
+[STATS] Core 5, Joules 271076, Instructions 2127, Cycles 1530131, RefCycles 2020872
+[STATS] Core 6, Joules 273918, Instructions 8925, Cycles 1548494, RefCycles 2059032
+[STATS] Core 7, Joules 277320, Instructions 9326, Cycles 1571729, RefCycles 2092680
+[STATS] Core 8, Joules 222865, Instructions 2164, Cycles 42172, RefCycles 75816
+[STATS] Core 9, Joules 225307, Instructions 2164, Cycles 44438, RefCycles 71664
+[STATS] Core 10, Joules 227830, Instructions 2143, Cycles 52775, RefCycles 80712
+[STATS] Core 11, Joules 230503, Instructions 2164, Cycles 60304, RefCycles 87792
+[STATS] Core 12, Joules 232851, Instructions 2164, Cycles 58168, RefCycles 84624
+[STATS] Core 13, Joules 235536, Instructions 18014152, Cycles 23532989, RefCycles 21840264
+[STATS] Core 14, Joules 238714, Instructions 2164, Cycles 70160, RefCycles 96456
+[STATS] Core 15, Joules 241572, Instructions 2143, Cycles 75910, RefCycles 101544
+~~~
