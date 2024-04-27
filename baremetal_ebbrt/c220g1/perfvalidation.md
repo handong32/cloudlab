@@ -225,6 +225,81 @@ volatile unsigned int ans = 0;
           ans += 1;                                                                                                                                                                                                                          
         }                                                                                                                                                                                                                                    
         ebbrt::kprintf_force("Answer %u\n", ans);
+Core 3 runins 10000000
+Answer 10000000
+100p  1 TcpCommand::Receive() 
+    
+
+[STATS] Core 0, Rdtsc 2439668295, Joules 241135, Instructions 399638, Cycles 6614845, RefCycles 11404872
+[STATS] Core 1, Rdtsc 2464269060, Joules 244602, Instructions 86609, Cycles 26075726, RefCycles 25256088
+[STATS] Core 2, Rdtsc 2488863393, Joules 248188, Instructions 2130, Cycles 1787075, RefCycles 2362512
+[STATS] Core 3, Rdtsc 2512769757, Joules 251775, Instructions 90015052, Cycles 86428999, RefCycles 80498760
+[STATS] Core 4, Rdtsc 2538062868, Joules 255694, Instructions 2130, Cycles 1740312, RefCycles 2306472
+[STATS] Core 5, Rdtsc 2561962836, Joules 258922, Instructions 2130, Cycles 1770273, RefCycles 2336688
+[STATS] Core 6, Rdtsc 2585869020, Joules 262504, Instructions 2130, Cycles 1772022, RefCycles 2338560
+[STATS] Core 7, Rdtsc 2609764821, Joules 266283, Instructions 2130, Cycles 1809880, RefCycles 2388840
+[STATS] Core 8, Rdtsc 2633665488, Joules 225074, Instructions 2167, Cycles 50793, RefCycles 101448
+[STATS] Core 9, Rdtsc 2656864226, Joules 228290, Instructions 9041, Cycles 82038, RefCycles 154896
+[STATS] Core 10, Rdtsc 2680059645, Joules 231315, Instructions 2146, Cycles 61706, RefCycles 108216
+[STATS] Core 11, Rdtsc 2703481486, Joules 234884, Instructions 2146, Cycles 67416, RefCycles 113208
+[STATS] Core 12, Rdtsc 2726907775, Joules 238463, Instructions 2168, Cycles 72357, RefCycles 116112
+[STATS] Core 13, Rdtsc 2750338851, Joules 242018, Instructions 2167, Cycles 77716, RefCycles 121896
+[STATS] Core 14, Rdtsc 2773765167, Joules 245592, Instructions 2168, Cycles 86763, RefCycles 131424
+[STATS] Core 15, Rdtsc 2797190721, Joules 248936, Instructions 9359, Cycles 119132, RefCycles 190080
+100rt 1 TcpCommand::Receive() 
+    
+
+30000000 cpCommand::Receive() 
+  
+
+Core 3 runins 20000000
+Answer 20000000
+100p  1 TcpCommand::Receive() 
+    
+
+[STATS] Core 0, Rdtsc 2439166431, Joules 245345, Instructions 399311, Cycles 6533107, RefCycles 11192664
+[STATS] Core 1, Rdtsc 2463767328, Joules 248824, Instructions 84594, Cycles 25959875, RefCycles 25112424
+[STATS] Core 2, Rdtsc 2488365555, Joules 252318, Instructions 2130, Cycles 1717621, RefCycles 2276184
+[STATS] Core 3, Rdtsc 2512270656, Joules 255881, Instructions 180015008, Cycles 154638000, RefCycles 143434776
+[STATS] Core 4, Rdtsc 2538259653, Joules 259799, Instructions 2130, Cycles 1677947, RefCycles 2225496
+[STATS] Core 5, Rdtsc 2562158748, Joules 263350, Instructions 2130, Cycles 1701919, RefCycles 2250984
+[STATS] Core 6, Rdtsc 2586061131, Joules 266924, Instructions 2130, Cycles 1707118, RefCycles 2253840
+[STATS] Core 7, Rdtsc 2609959722, Joules 270592, Instructions 2130, Cycles 1737243, RefCycles 2293680
+[STATS] Core 8, Rdtsc 2633859760, Joules 229782, Instructions 2167, Cycles 89752, RefCycles 170712
+[STATS] Core 9, Rdtsc 2657059415, Joules 232917, Instructions 2167, Cycles 93111, RefCycles 168576
+[STATS] Core 10, Rdtsc 2680256678, Joules 236501, Instructions 2146, Cycles 101952, RefCycles 179880
+[STATS] Core 11, Rdtsc 2703917110, Joules 240077, Instructions 2146, Cycles 108886, RefCycles 186288
+[STATS] Core 12, Rdtsc 2727579420, Joules 243659, Instructions 11062, Cycles 152255, RefCycles 235032
+[STATS] Core 13, Rdtsc 2751470454, Joules 247217, Instructions 2167, Cycles 116776, RefCycles 191376
+[STATS] Core 14, Rdtsc 2775124868, Joules 251000, Instructions 9041, Cycles 148940, RefCycles 249240
+[STATS] Core 15, Rdtsc 2798785530, Joules 254411, Instructions 2146, Cycles 130492, RefCycles 205992
+100rt 1 TcpCommand::Receive() 
+    
+
+30000000 cpCommand::Receive() 
+  
+
+Core 3 runins 30000000
+Answer 30000000
+100p  1 TcpCommand::Receive() 
+    
+
+[STATS] Core 0, Rdtsc 2439529830, Joules 249107, Instructions 399440, Cycles 6428320, RefCycles 10910304
+[STATS] Core 1, Rdtsc 2464132143, Joules 252864, Instructions 84286, Cycles 25604208, RefCycles 24945528
+[STATS] Core 2, Rdtsc 2488728510, Joules 256447, Instructions 2130, Cycles 1582729, RefCycles 2096808
+[STATS] Core 3, Rdtsc 2512633188, Joules 259997, Instructions 270015052, Cycles 224660731, RefCycles 208016232
+[STATS] Core 4, Rdtsc 2538623103, Joules 263936, Instructions 2130, Cycles 1546554, RefCycles 2051448
+[STATS] Core 5, Rdtsc 2562524004, Joules 267527, Instructions 2130, Cycles 1570805, RefCycles 2077248
+[STATS] Core 6, Rdtsc 2586422490, Joules 271114, Instructions 2130, Cycles 1573204, RefCycles 2076288
+[STATS] Core 7, Rdtsc 2610321801, Joules 274682, Instructions 2130, Cycles 1603948, RefCycles 2117232
+[STATS] Core 8, Rdtsc 2634224736, Joules 236259, Instructions 2167, Cycles 108747, RefCycles 208416
+[STATS] Core 9, Rdtsc 2657659180, Joules 239365, Instructions 2167, Cycles 109592, RefCycles 201576
+[STATS] Core 10, Rdtsc 2681079974, Joules 242943, Instructions 8940, Cycles 148190, RefCycles 256248
+[STATS] Core 11, Rdtsc 2704740100, Joules 246505, Instructions 2146, Cycles 126420, RefCycles 221472
+[STATS] Core 12, Rdtsc 2728404047, Joules 250080, Instructions 2167, Cycles 126526, RefCycles 216912
+[STATS] Core 13, Rdtsc 2752060568, Joules 253655, Instructions 2167, Cycles 133993, RefCycles 224952
+[STATS] Core 14, Rdtsc 2775717511, Joules 257361, Instructions 2167, Cycles 141630, RefCycles 234696
+[STATS] Core 15, Rdtsc 2799379491, Joules 260810, Instructions 8962, Cycles 173434, RefCycles 292056
 
 Core 1 runins 1000000
 Answer 1000000
