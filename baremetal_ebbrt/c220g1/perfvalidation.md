@@ -219,6 +219,13 @@ pfcWRMSR: add=0x4c4 newVal=0x0
 
 ## EbbRT PCM
 ~~~
+volatile unsigned int ans = 0;                                                                                                                                                                                                       
+        volatile unsigned int i;                                                                                                                                                                                                             
+        for(i=0;i<param;i++) {                                                                                                                                                                                                               
+          ans += 1;                                                                                                                                                                                                                          
+        }                                                                                                                                                                                                                                    
+        ebbrt::kprintf_force("Answer %u\n", ans);
+
 Core 1 runins 1000000
 Answer 1000000
 100p  1 TcpCommand::Receive() 
