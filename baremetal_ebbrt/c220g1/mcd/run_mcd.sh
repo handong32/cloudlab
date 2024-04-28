@@ -20,7 +20,7 @@ function run
 
     echo "🟢🟢 Warmup run 🟢🟢"
     echo "start,0" | socat - TCP4:$TCP_SERVER
-    taskset -c 15 ~/mutilate/mutilate --binary -s $TBENCH_SERVER --noload --agent=$AGENTS --threads=1 --keysize=fb_key --valuesize=fb_value --iadist=fb_ia --update=0.25 --depth=4 --measure_depth=1 --connections=8 --measure_connections=32 --measure_qps=2000 --qps=10000 --time=10
+    taskset -c 15 ~/mutilate/mutilate --binary -s $TBENCH_SERVER --noload --agent=$AGENTS --threads=1 --keysize=fb_key --valuesize=fb_value --iadist=fb_ia --update=0.25 --depth=4 --measure_depth=1 --connections=10 --measure_connections=32 --measure_qps=2000 --qps=10000 --time=10
     echo "stop,0" | socat - TCP4:$TCP_SERVER
     echo "getcounters,0" | socat - TCP4:$TCP_SERVER
 
@@ -30,7 +30,7 @@ function run
 	
 	echo "start,0" | socat - TCP4:$TCP_SERVER
 	echo "taskset -c 15 ~/mutilate/mutilate --binary -s $TBENCH_SERVER --noload --agent=$AGENTS --threads=1 --keysize=fb_key --valuesize=fb_value --iadist=fb_ia --update=0.25 --depth=4 --measure_depth=1 --connections=8 --measure_connections=32 --measure_qps=2000 --qps=${MQPS} --time=30 > $name.out"
-        taskset -c 15 ~/mutilate/mutilate --binary -s $TBENCH_SERVER --noload --agent=$AGENTS --threads=1 --keysize=fb_key --valuesize=fb_value --iadist=fb_ia --update=0.25 --depth=4 --measure_depth=1 --connections=8 --measure_connections=32 --measure_qps=2000 --qps=${MQPS} --time=30 > $name.out
+        taskset -c 15 ~/mutilate/mutilate --binary -s $TBENCH_SERVER --noload --agent=$AGENTS --threads=1 --keysize=fb_key --valuesize=fb_value --iadist=fb_ia --update=0.25 --depth=4 --measure_depth=1 --connections=10 --measure_connections=32 --measure_qps=2000 --qps=${MQPS} --time=30 > $name.out
 	echo "stop,0" | socat - TCP4:$TCP_SERVER
 	echo "getcounters,0" | socat - TCP4:$TCP_SERVER
 	cat $name.out | grep "read"
