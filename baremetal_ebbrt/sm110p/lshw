@@ -1,0 +1,2037 @@
+client2.hand32-205007.bayopsys-pg0.wisc.cloudlab.us
+    description: Computer
+    width: 64 bits
+    capabilities: smp vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 4
+          size: 128GiB
+     *-cpu
+          product: Intel(R) Xeon(R) Silver 4314 CPU @ 2.40GHz
+          vendor: Intel Corp.
+          physical id: 5
+          bus info: cpu@0
+          version: 6.106.6
+          size: 1633MHz
+          capacity: 3400MHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 invpcid_single ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid fsrm md_clear pconfig flush_l1d arch_capabilities cpufreq
+          configuration: microcode=218104741
+     *-generic:0 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Memory Map/VT-d
+          vendor: Intel Corporation
+          physical id: 6
+          bus info: pci@0000:00:00.0
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:1 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Mesh 2 PCIe
+          vendor: Intel Corporation
+          physical id: 7
+          bus info: pci@0000:00:00.1
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:2 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake RAS
+          vendor: Intel Corporation
+          physical id: 8
+          bus info: pci@0000:00:00.2
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-pci:0
+          description: Host bridge
+          product: Ice Lake IEH
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic:0
+             description: System peripheral
+             product: Ice Lake CBDMA [QuickData Technology]
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=ioatdma latency=0
+             resources: iomemory:200f0-200ef irq:17 memory:200ffff50000-200ffff53fff
+        *-generic:1
+             description: System peripheral
+             product: Ice Lake CBDMA [QuickData Technology]
+             vendor: Intel Corporation
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=ioatdma latency=0
+             resources: iomemory:200f0-200ef irq:17 memory:200ffff4c000-200ffff4ffff
+        *-generic:2
+             description: System peripheral
+             product: Ice Lake CBDMA [QuickData Technology]
+             vendor: Intel Corporation
+             physical id: 1.2
+             bus info: pci@0000:00:01.2
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=ioatdma latency=0
+             resources: iomemory:200f0-200ef irq:17 memory:200ffff48000-200ffff4bfff
+        *-generic:3
+             description: System peripheral
+             product: Ice Lake CBDMA [QuickData Technology]
+             vendor: Intel Corporation
+             physical id: 1.3
+             bus info: pci@0000:00:01.3
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=ioatdma latency=0
+             resources: iomemory:200f0-200ef irq:17 memory:200ffff44000-200ffff47fff
+        *-generic:4
+             description: System peripheral
+             product: Ice Lake CBDMA [QuickData Technology]
+             vendor: Intel Corporation
+             physical id: 1.4
+             bus info: pci@0000:00:01.4
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=ioatdma latency=0
+             resources: iomemory:200f0-200ef irq:17 memory:200ffff40000-200ffff43fff
+        *-generic:5
+             description: System peripheral
+             product: Ice Lake CBDMA [QuickData Technology]
+             vendor: Intel Corporation
+             physical id: 1.5
+             bus info: pci@0000:00:01.5
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=ioatdma latency=0
+             resources: iomemory:200f0-200ef irq:17 memory:200ffff3c000-200ffff3ffff
+        *-generic:6
+             description: System peripheral
+             product: Ice Lake CBDMA [QuickData Technology]
+             vendor: Intel Corporation
+             physical id: 1.6
+             bus info: pci@0000:00:01.6
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=ioatdma latency=0
+             resources: iomemory:200f0-200ef irq:17 memory:200ffff38000-200ffff3bfff
+        *-generic:7
+             description: System peripheral
+             product: Ice Lake CBDMA [QuickData Technology]
+             vendor: Intel Corporation
+             physical id: 1.7
+             bus info: pci@0000:00:01.7
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=ioatdma latency=0
+             resources: iomemory:200f0-200ef irq:17 memory:200ffff34000-200ffff37fff
+        *-generic:8 UNCLAIMED
+             description: System peripheral
+             product: Ice Lake MSM
+             vendor: Intel Corporation
+             physical id: 0
+             bus info: pci@0000:00:02.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: latency=0
+             resources: memory:a5888000-a5889fff
+        *-generic:9 UNCLAIMED
+             description: System peripheral
+             product: Ice Lake PMON MSM
+             vendor: Intel Corporation
+             physical id: 2.1
+             bus info: pci@0000:00:02.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: latency=0
+             resources: memory:a5800000-a587ffff memory:a5780000-a57fffff
+        *-generic:10 UNCLAIMED
+             description: Non-Essential Instrumentation
+             product: Ice Lake NorthPeak
+             vendor: Intel Corporation
+             physical id: 2.4
+             bus info: pci@0000:00:02.4
+             version: 01
+             width: 64 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+             resources: iomemory:200f0-200ef iomemory:200f0-200ef iomemory:200f0-200ef memory:200fffe00000-200fffefffff memory:200ffff30000-200ffff33fff memory:200ffff00000-200ffff1ffff
+        *-generic:11 UNCLAIMED
+             description: Unassigned class
+             product: C620 Series Chipset Family MROM 0
+             vendor: Intel Corporation
+             physical id: 11
+             bus info: pci@0000:00:11.0
+             version: 0a
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-sata:0
+             description: SATA controller
+             product: C620 Series Chipset Family SSATA Controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: 11.5
+             bus info: pci@0000:00:11.5
+             version: 0a
+             width: 32 bits
+             clock: 66MHz
+             capabilities: sata ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:131 memory:a5886000-a5887fff memory:a588b000-a588b0ff ioport:4070(size=8) ioport:4060(size=4) ioport:4020(size=32) memory:a5680000-a56fffff
+        *-usb
+             description: USB controller
+             product: C620 Series Chipset Family USB 3.0 xHCI Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 0a
+             width: 64 bits
+             clock: 33MHz
+             capabilities: xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: iomemory:200f0-200ef irq:130 memory:200ffff20000-200ffff2ffff
+        *-generic:12
+             description: Signal processing controller
+             product: C620 Series Chipset Family Thermal Subsystem
+             vendor: Intel Corporation
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 0a
+             width: 64 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=intel_pch_thermal latency=0
+             resources: iomemory:200f0-200ef irq:18 memory:200ffff57000-200ffff57fff
+        *-communication:0 UNCLAIMED
+             description: Communication controller
+             product: C620 Series Chipset Family MEI Controller #1
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 0a
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: latency=0
+             resources: iomemory:200f0-200ef memory:200ffff56000-200ffff56fff
+        *-communication:1 UNCLAIMED
+             description: Communication controller
+             product: C620 Series Chipset Family MEI Controller #2
+             vendor: Intel Corporation
+             physical id: 16.1
+             bus info: pci@0000:00:16.1
+             version: 0a
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: latency=0
+             resources: iomemory:200f0-200ef memory:200ffff55000-200ffff55fff
+        *-communication:2 UNCLAIMED
+             description: Communication controller
+             product: C620 Series Chipset Family MEI Controller #3
+             vendor: Intel Corporation
+             physical id: 16.4
+             bus info: pci@0000:00:16.4
+             version: 0a
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: latency=0
+             resources: iomemory:200f0-200ef memory:200ffff54000-200ffff54fff
+        *-sata:1
+             description: SATA controller
+             product: C620 Series Chipset Family SATA Controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: 17
+             bus info: pci@0000:00:17.0
+             version: 0a
+             width: 32 bits
+             clock: 66MHz
+             capabilities: sata ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:133 memory:a5884000-a5885fff memory:a588a000-a588a0ff ioport:4050(size=8) ioport:4040(size=4) ioport:4000(size=32) memory:a5600000-a567ffff
+        *-pci:0
+             description: PCI bridge
+             product: C620 Series Chipset Family PCI Express Root Port #1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: fa
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:125 memory:a5100000-a55fffff ioport:200fff400000(size=9437184)
+           *-network:0
+                description: NVMe device
+                product: SAMSUNG MZQL2960HCJR-00A07
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                logical name: /dev/nvme0
+                version: GDC5302Q
+                serial: S64FNE0RA01797
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom
+                configuration: driver=ixgbe latency=0 nqn=nqn.1994-11.com.samsung:nvme:PM9A3:2.5-inch:S64FNE0RA01797 state=live
+                resources: iomemory:200f0-200ef iomemory:200f0-200ef irq:16 memory:200fff800000-200fffbfffff memory:200fffc04000-200fffc07fff memory:a5180000-a51fffff memory:a5500000-a55fffff memory:a5400000-a54fffff
+              *-namespace:0
+                   description: NVMe disk
+                   physical id: 0
+                   logical name: hwmon0
+              *-namespace:1
+                   description: NVMe disk
+                   physical id: 2
+                   logical name: /dev/ng0n1
+              *-namespace:2
+                   description: NVMe disk
+                   physical id: 1
+                   bus info: nvme@0:1
+                   logical name: /dev/nvme0n1
+                   configuration: wwid=eui.3634463052a017970025384500000001
+           *-network:1 DISABLED
+                description: Ethernet interface
+                product: Ethernet Controller X550
+                vendor: Intel Corporation
+                physical id: 0.1
+                bus info: pci@0000:01:00.1
+                logical name: eno2
+                version: 01
+                serial: 3c:ec:ef:f9:bf:43
+                capacity: 10Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical tp 100bt-fd 1000bt-fd 10000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=ixgbe driverversion=5.15.0-86-generic firmware=0x80001112, 1.2829.0 latency=0 link=no multicast=yes port=twisted pair
+                resources: iomemory:200f0-200ef iomemory:200f0-200ef irq:17 memory:200fff400000-200fff7fffff memory:200fffc00000-200fffc03fff memory:a5100000-a517ffff memory:a5300000-a53fffff memory:a5200000-a52fffff
+           *-nvme
+                description: Non-Volatile memory controller
+                product: NVMe SSD Controller PM9A1/PM9A3/980PRO
+                vendor: Samsung Electronics Co Ltd
+                physical id: 1
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: nvme nvm_express bus_master cap_list rom
+                configuration: driver=nvme latency=0
+                resources: irq:-2147483648 memory:f8010000-f8013fff memory:f8000000-f800ffff
+        *-pci:1
+             description: PCI bridge
+             product: C620 Series Chipset Family PCI Express Root Port #5
+             vendor: Intel Corporation
+             physical id: 1c.4
+             bus info: pci@0000:00:1c.4
+             version: fa
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:126
+           *-nvme
+                description: Non-Volatile memory controller
+                product: NVMe SSD Controller PM9A1/PM9A3/980PRO
+                vendor: Samsung Electronics Co Ltd
+                physical id: 0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: nvme nvm_express bus_master cap_list rom
+                configuration: driver=nvme latency=0
+                resources: irq:-2147483648 memory:f8410000-f8413fff memory:f8400000-f840ffff
+        *-pci:2
+             description: PCI bridge
+             product: C620 Series Chipset Family PCI Express Root Port #6
+             vendor: Intel Corporation
+             physical id: 1c.5
+             bus info: pci@0000:00:1c.5
+             version: fa
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:127 ioport:3000(size=4096) memory:a4000000-a50fffff
+           *-pci
+                description: NVMe device
+                product: SAMSUNG MZQL2960HCJR-00A07
+                vendor: ASPEED Technology, Inc.
+                physical id: 100
+                bus info: pci@0000:03:00.0
+                logical name: /dev/nvme2
+                version: GDC5302Q
+                serial: S64FNE0RA01888
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pci normal_decode bus_master cap_list
+                configuration: nqn=nqn.1994-11.com.samsung:nvme:PM9A3:2.5-inch:S64FNE0RA01888 state=live
+                resources: ioport:3000(size=4096) memory:a4000000-a50fffff
+              *-display
+                   description: NVMe device
+                   product: SAMSUNG MZQL2960HCJR-00A07
+                   vendor: ASPEED Technology, Inc.
+                   physical id: 0
+                   bus info: pci@0000:04:00.0
+                   logical name: /dev/nvme3
+                   logical name: /dev/fb0
+                   version: GDC5302Q
+                   serial: S64FNE0RA01908
+                   width: 32 bits
+                   clock: 33MHz
+                   capabilities: vga_controller cap_list fb
+                   configuration: depth=32 driver=ast latency=0 nqn=nqn.1994-11.com.samsung:nvme:PM9A3:2.5-inch:S64FNE0RA01908 resolution=1024,768 state=live
+                   resources: irq:17 memory:a4000000-a4ffffff memory:a5000000-a503ffff ioport:3000(size=128)
+                 *-namespace:0
+                      description: NVMe disk
+                      physical id: 0
+                      logical name: hwmon1
+                 *-namespace:1
+                      description: NVMe disk
+                      physical id: 2
+                      logical name: /dev/ng3n1
+                 *-namespace:2
+                      description: NVMe disk
+                      physical id: 1
+                      bus info: nvme@3:1
+                      logical name: /dev/nvme3n1
+                      configuration: wwid=eui.3634463052a019080025384500000001
+              *-nvme
+                   description: Non-Volatile memory controller
+                   product: NVMe SSD Controller PM9A1/PM9A3/980PRO
+                   vendor: Samsung Electronics Co Ltd
+                   physical id: 2
+                   version: 00
+                   width: 64 bits
+                   clock: 33MHz
+                   capabilities: nvme nvm_express bus_master cap_list rom
+                   configuration: driver=nvme latency=0
+                   resources: irq:-2147483648 memory:f8c10000-f8c13fff memory:f8c00000-f8c0ffff
+              *-namespace:0
+                   description: NVMe disk
+                   physical id: 3
+                   logical name: hwmon2
+              *-namespace:1
+                   description: NVMe disk
+                   physical id: 4
+                   logical name: /dev/ng2n1
+              *-namespace:2
+                   description: NVMe disk
+                   physical id: 1
+                   bus info: nvme@2:1
+                   logical name: /dev/nvme2n1
+                   configuration: wwid=eui.3634463052a018880025384500000001
+           *-nvme
+                description: Non-Volatile memory controller
+                product: NVMe SSD Controller PM9A1/PM9A3/980PRO
+                vendor: Samsung Electronics Co Ltd
+                physical id: 0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: nvme nvm_express bus_master cap_list rom
+                configuration: driver=nvme latency=0
+                resources: irq:-2147483648 memory:f8810000-f8813fff memory:f8800000-f880ffff
+        *-isa
+             description: ISA bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 0a
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa
+             configuration: latency=0
+           *-pnp00:00
+                product: PnP device PNP0b00
+                physical id: 0
+                capabilities: pnp
+                configuration: driver=rtc_cmos
+           *-pnp00:01
+                product: PnP device PNP0c02
+                physical id: 1
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:02
+                product: PnP device PNP0c02
+                physical id: 2
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:03
+                product: PnP device PNP0501
+                physical id: 3
+                capabilities: pnp
+                configuration: driver=serial
+           *-pnp00:04
+                product: PnP device PNP0501
+                physical id: 4
+                capabilities: pnp
+                configuration: driver=serial
+           *-pnp00:05
+                product: PnP device PNP0c02
+                physical id: 5
+                capabilities: pnp
+                configuration: driver=system
+           *-pnp00:06
+                product: PnP device PNP0c02
+                physical id: 6
+                capabilities: pnp
+                configuration: driver=system
+        *-memory UNCLAIMED
+             description: Memory controller
+             product: C620 Series Chipset Family Power Management Controller
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 0a
+             width: 32 bits
+             clock: 33MHz (30.3ns)
+             configuration: latency=0
+             resources: memory:a5880000-a5883fff
+        *-serial:0
+             description: SMBus
+             product: C620 Series Chipset Family SMBus
+             vendor: Intel Corporation
+             physical id: 1f.4
+             bus info: pci@0000:00:1f.4
+             version: 0a
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: iomemory:20000-1ffff irq:16 memory:200000000000-2000000000ff ioport:780(size=32)
+        *-serial:1 UNCLAIMED
+             description: Serial bus controller
+             product: C620 Series Chipset Family SPI Controller
+             vendor: Intel Corporation
+             physical id: 1f.5
+             bus info: pci@0000:00:1f.5
+             version: 0a
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: memory:fe010000-fe010fff
+        *-pci:3
+             description: PCI bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 100
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: iomemory:204f0-204ef irq:132 memory:204ffff20000-204ffff3ffff memory:f8000000-f81fffff ioport:f8200000(size=2097152)
+        *-pci:4
+             description: PCI bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 3
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: iomemory:204f0-204ef irq:134 memory:204ffff40000-204ffff5ffff memory:f8400000-f85fffff ioport:f8600000(size=2097152)
+        *-pci:5
+             description: PCI bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 4
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: iomemory:204f0-204ef irq:135 memory:204ffff60000-204ffff7ffff memory:f8800000-f89fffff ioport:f8a00000(size=2097152)
+        *-pci:6
+             description: PCI bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 5
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: iomemory:204f0-204ef irq:136 memory:204ffff80000-204ffff9ffff memory:f8c00000-f8dfffff ioport:f8e00000(size=2097152)
+     *-generic:3 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Memory Map/VT-d
+          vendor: Intel Corporation
+          physical id: 9
+          bus info: pci@0000:17:00.0
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:4 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Mesh 2 PCIe
+          vendor: Intel Corporation
+          physical id: e
+          bus info: pci@0000:17:00.1
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:5 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake RAS
+          vendor: Intel Corporation
+          physical id: f
+          bus info: pci@0000:17:00.2
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-pci:1
+          description: Host bridge
+          product: Ice Lake IEH
+          vendor: Intel Corporation
+          physical id: 101
+          bus info: pci@0000:17:00.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+     *-generic:6 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Memory Map/VT-d
+          vendor: Intel Corporation
+          physical id: 10
+          bus info: pci@0000:50:00.0
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:7 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Mesh 2 PCIe
+          vendor: Intel Corporation
+          physical id: 11
+          bus info: pci@0000:50:00.1
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:8 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake RAS
+          vendor: Intel Corporation
+          physical id: 12
+          bus info: pci@0000:50:00.2
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-pci:2
+          description: Host bridge
+          product: Ice Lake IEH
+          vendor: Intel Corporation
+          physical id: 102
+          bus info: pci@0000:50:00.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-pci
+             description: PCI bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:50:02.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: iomemory:202f0-202ef irq:128 memory:202ffff00000-202ffff1ffff memory:d0d00000-d0efffff ioport:202ffa000000(size=83886080)
+           *-network:0
+                description: Ethernet interface
+                product: MT2892 Family [ConnectX-6 Dx]
+                vendor: Mellanox Technologies
+                physical id: 0
+                bus info: pci@0000:51:00.0
+                logical name: ens2f0np0
+                version: 00
+                serial: b8:3f:d2:13:08:a6
+                capacity: 40Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical fibre 1000bt-fd 10000bt-fd 25000bt-fd 40000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic duplex=full firmware=22.39.2048 (MT_0000000437) ip=192.168.1.2 latency=0 link=yes multicast=yes port=fibre
+                resources: iomemory:202f0-202ef irq:18 memory:202ffc000000-202ffdffffff memory:d0e00000-d0efffff memory:202ffe800000-202ffeffffff
+           *-network:1 DISABLED
+                description: Ethernet interface
+                product: MT2892 Family [ConnectX-6 Dx]
+                vendor: Mellanox Technologies
+                physical id: 0.1
+                bus info: pci@0000:51:00.1
+                logical name: ens2f1np1
+                version: 00
+                serial: b8:3f:d2:13:08:a7
+                capacity: 40Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical fibre 1000bt-fd 10000bt-fd 25000bt-fd 40000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic firmware=22.39.2048 (MT_0000000437) latency=0 link=no multicast=yes port=fibre
+                resources: iomemory:202f0-202ef irq:19 memory:202ffa000000-202ffbffffff memory:d0d00000-d0dfffff memory:202ffe000000-202ffe7fffff
+     *-generic:9 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Memory Map/VT-d
+          vendor: Intel Corporation
+          physical id: 13
+          bus info: pci@0000:89:00.0
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:10 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Mesh 2 PCIe
+          vendor: Intel Corporation
+          physical id: 14
+          bus info: pci@0000:89:00.1
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:11 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake RAS
+          vendor: Intel Corporation
+          physical id: 15
+          bus info: pci@0000:89:00.2
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-pci:3
+          description: Host bridge
+          product: Ice Lake IEH
+          vendor: Intel Corporation
+          physical id: 103
+          bus info: pci@0000:89:00.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-pci
+             description: PCI bridge
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:89:02.0
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: iomemory:203f0-203ef irq:129 memory:203ffff00000-203ffff1ffff memory:e6500000-e66fffff ioport:203ffa000000(size=67108864)
+           *-network:0
+                description: Ethernet interface
+                product: MT2894 Family [ConnectX-6 Lx]
+                vendor: Mellanox Technologies
+                physical id: 0
+                bus info: pci@0000:8a:00.0
+                logical name: ens1f0np0
+                version: 00
+                serial: b8:3f:d2:77:d8:da
+                capacity: 25Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical fibre 1000bt-fd 10000bt-fd 25000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic duplex=full firmware=26.32.2004 (DEL0000000031) ip=128.105.146.89 latency=0 link=yes multicast=yes port=fibre
+                resources: iomemory:203f0-203ef irq:18 memory:203ffc000000-203ffdffffff memory:e6600000-e66fffff
+           *-network:1 DISABLED
+                description: Ethernet interface
+                product: MT2894 Family [ConnectX-6 Lx]
+                vendor: Mellanox Technologies
+                physical id: 0.1
+                bus info: pci@0000:8a:00.1
+                logical name: ens1f1np1
+                version: 00
+                serial: b8:3f:d2:77:d8:db
+                capacity: 25Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list rom ethernet physical 1000bt-fd 10000bt-fd 25000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic firmware=26.32.2004 (DEL0000000031) latency=0 link=no multicast=yes
+                resources: iomemory:203f0-203ef irq:19 memory:203ffa000000-203ffbffffff memory:e6500000-e65fffff
+     *-generic:12 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Memory Map/VT-d
+          vendor: Intel Corporation
+          physical id: 16
+          bus info: pci@0000:c2:00.0
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:13 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake Mesh 2 PCIe
+          vendor: Intel Corporation
+          physical id: 17
+          bus info: pci@0000:c2:00.1
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:14 UNCLAIMED
+          description: System peripheral
+          product: Ice Lake RAS
+          vendor: Intel Corporation
+          physical id: 18
+          bus info: pci@0000:c2:00.2
+          version: 04
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-pci:4
+          description: Host bridge
+          product: Ice Lake IEH
+          vendor: Intel Corporation
+          physical id: 104
+          bus info: pci@0000:c2:00.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-raid
+             description: RAID bus controller
+             product: Volume Management Device NVMe RAID Controller
+             vendor: Intel Corporation
+             physical id: 0.5
+             bus info: pci@0000:c2:00.5
+             version: 04
+             width: 64 bits
+             clock: 33MHz
+             capabilities: raid bus_master cap_list
+             configuration: driver=vmd latency=0
+             resources: iomemory:204f0-204ef iomemory:204f0-204ef irq:0 memory:204ffc000000-204ffdffffff memory:f8000000-f9ffffff memory:204ffff00000-204fffffffff
+        *-generic:0 UNCLAIMED
+             description: System peripheral
+             product: RST VMD Managed Controller
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:c2:02.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+        *-generic:1 UNCLAIMED
+             description: System peripheral
+             product: RST VMD Managed Controller
+             vendor: Intel Corporation
+             physical id: 3
+             bus info: pci@0000:c2:03.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+        *-generic:2 UNCLAIMED
+             description: System peripheral
+             product: RST VMD Managed Controller
+             vendor: Intel Corporation
+             physical id: 4
+             bus info: pci@0000:c2:04.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+        *-generic:3 UNCLAIMED
+             description: System peripheral
+             product: RST VMD Managed Controller
+             vendor: Intel Corporation
+             physical id: 5
+             bus info: pci@0000:c2:05.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+     *-generic:15 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 19
+          bus info: pci@0000:fe:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:16
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1a
+          bus info: pci@0000:fe:00.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: driver=isst_if_pci latency=0
+          resources: irq:0
+     *-generic:17 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1b
+          bus info: pci@0000:fe:00.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-pci:5
+          description: Host bridge
+          product: Ice Lake IEH
+          vendor: Intel Corporation
+          physical id: 105
+          bus info: pci@0000:fe:00.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+        *-generic:0 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 0.5
+             bus info: pci@0000:fe:00.5
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:1 UNCLAIMED
+             description: System peripheral
+             product: Ice Lake UPI Misc
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:fe:02.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:2
+             description: System peripheral
+             product: Ice Lake UPI Link/Phy0
+             vendor: Intel Corporation
+             physical id: 2.1
+             bus info: pci@0000:fe:02.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:3 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 2.2
+             bus info: pci@0000:fe:02.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:4 UNCLAIMED
+             description: System peripheral
+             product: Ice Lake UPI Misc
+             vendor: Intel Corporation
+             physical id: 4
+             bus info: pci@0000:fe:04.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:5
+             description: System peripheral
+             product: Ice Lake UPI Link/Phy0
+             vendor: Intel Corporation
+             physical id: 4.1
+             bus info: pci@0000:fe:04.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:6 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 4.2
+             bus info: pci@0000:fe:04.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:7 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 4.3
+             bus info: pci@0000:fe:04.3
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:8 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 5
+             bus info: pci@0000:fe:05.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:9
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 5.1
+             bus info: pci@0000:fe:05.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:10 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 5.2
+             bus info: pci@0000:fe:05.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:11 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 6
+             bus info: pci@0000:fe:06.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:12
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 6.1
+             bus info: pci@0000:fe:06.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:13 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 6.2
+             bus info: pci@0000:fe:06.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:14 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 7
+             bus info: pci@0000:fe:07.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:15
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 7.1
+             bus info: pci@0000:fe:07.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:16 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 7.2
+             bus info: pci@0000:fe:07.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:17 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: b
+             bus info: pci@0000:fe:0b.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+        *-generic:18 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: b.1
+             bus info: pci@0000:fe:0b.1
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+        *-generic:19 UNCLAIMED
+             description: System peripheral
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: b.2
+             bus info: pci@0000:fe:0b.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             configuration: latency=0
+        *-generic:20
+             description: Performance counters
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: c
+             bus info: pci@0000:fe:0c.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:21
+             description: Performance counters
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: d
+             bus info: pci@0000:fe:0d.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:22
+             description: Performance counters
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: e
+             bus info: pci@0000:fe:0e.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:23
+             description: Performance counters
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: f
+             bus info: pci@0000:fe:0f.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=icx_uncore latency=0
+             resources: irq:0
+        *-generic:24 UNCLAIMED
+             description: Performance counters
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 1a
+             bus info: pci@0000:fe:1a.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:25 UNCLAIMED
+             description: Performance counters
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:fe:1b.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:26 UNCLAIMED
+             description: Performance counters
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:fe:1c.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+        *-generic:27 UNCLAIMED
+             description: Performance counters
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:fe:1d.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+     *-generic:18 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 0
+          bus info: pci@0000:ff:00.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:19 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 0.1
+          bus info: pci@0000:ff:00.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:20 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 0.2
+          bus info: pci@0000:ff:00.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:21 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 0.3
+          bus info: pci@0000:ff:00.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:22 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 0.4
+          bus info: pci@0000:ff:00.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:23 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 0.5
+          bus info: pci@0000:ff:00.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:24 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 0.6
+          bus info: pci@0000:ff:00.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:25 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 0.7
+          bus info: pci@0000:ff:00.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:26 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1
+          bus info: pci@0000:ff:01.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:27 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1.1
+          bus info: pci@0000:ff:01.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:28 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1.2
+          bus info: pci@0000:ff:01.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:29 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1.3
+          bus info: pci@0000:ff:01.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:30 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1.4
+          bus info: pci@0000:ff:01.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:31 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1.5
+          bus info: pci@0000:ff:01.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:32 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1.6
+          bus info: pci@0000:ff:01.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:33 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1.7
+          bus info: pci@0000:ff:01.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:34 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 2
+          bus info: pci@0000:ff:02.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:35 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 2.1
+          bus info: pci@0000:ff:02.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:36 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 2.2
+          bus info: pci@0000:ff:02.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:37 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 2.3
+          bus info: pci@0000:ff:02.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:38 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 2.4
+          bus info: pci@0000:ff:02.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:39 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 2.5
+          bus info: pci@0000:ff:02.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:40 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 2.6
+          bus info: pci@0000:ff:02.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:41 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 2.7
+          bus info: pci@0000:ff:02.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:42 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 3
+          bus info: pci@0000:ff:03.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:43 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 3.1
+          bus info: pci@0000:ff:03.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:44 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 3.2
+          bus info: pci@0000:ff:03.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:45 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 3.3
+          bus info: pci@0000:ff:03.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:46 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: a
+          bus info: pci@0000:ff:0a.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:47 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: a.1
+          bus info: pci@0000:ff:0a.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:48 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: a.2
+          bus info: pci@0000:ff:0a.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:49 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: a.3
+          bus info: pci@0000:ff:0a.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:50 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: a.4
+          bus info: pci@0000:ff:0a.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:51 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: a.5
+          bus info: pci@0000:ff:0a.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:52 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: a.6
+          bus info: pci@0000:ff:0a.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:53 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: a.7
+          bus info: pci@0000:ff:0a.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:54 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: b
+          bus info: pci@0000:ff:0b.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:55 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: b.1
+          bus info: pci@0000:ff:0b.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:56 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: b.2
+          bus info: pci@0000:ff:0b.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:57 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: b.3
+          bus info: pci@0000:ff:0b.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:58 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: b.4
+          bus info: pci@0000:ff:0b.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:59 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: b.5
+          bus info: pci@0000:ff:0b.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:60 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: b.6
+          bus info: pci@0000:ff:0b.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:61 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: b.7
+          bus info: pci@0000:ff:0b.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:62 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: c
+          bus info: pci@0000:ff:0c.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:63 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: c.1
+          bus info: pci@0000:ff:0c.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:64 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: c.2
+          bus info: pci@0000:ff:0c.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:65 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: c.3
+          bus info: pci@0000:ff:0c.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:66 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: c.4
+          bus info: pci@0000:ff:0c.4
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:67 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: c.5
+          bus info: pci@0000:ff:0c.5
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:68 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: c.6
+          bus info: pci@0000:ff:0c.6
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:69 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: c.7
+          bus info: pci@0000:ff:0c.7
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:70 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: d
+          bus info: pci@0000:ff:0d.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:71 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: d.1
+          bus info: pci@0000:ff:0d.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:72 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: d.2
+          bus info: pci@0000:ff:0d.2
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:73 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: d.3
+          bus info: pci@0000:ff:0d.3
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:74 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1d
+          bus info: pci@0000:ff:1d.0
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:75 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1d.1
+          bus info: pci@0000:ff:1d.1
+          version: 00
+          width: 32 bits
+          clock: 33MHz
+          capabilities: cap_list
+          configuration: latency=0
+     *-generic:76 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1e
+          bus info: pci@0000:ff:1e.0
+          version: 06
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+     *-generic:77
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1e.1
+          bus info: pci@0000:ff:1e.1
+          version: 06
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=isst_if_mbox_pci latency=0
+          resources: irq:0
+     *-generic:78 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1e.2
+          bus info: pci@0000:ff:1e.2
+          version: 06
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+     *-generic:79 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1e.3
+          bus info: pci@0000:ff:1e.3
+          version: 06
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+     *-generic:80 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1e.4
+          bus info: pci@0000:ff:1e.4
+          version: 06
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+     *-generic:81 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1e.5
+          bus info: pci@0000:ff:1e.5
+          version: 06
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+     *-generic:82 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1e.6
+          bus info: pci@0000:ff:1e.6
+          version: 06
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+     *-generic:83 UNCLAIMED
+          description: System peripheral
+          product: Intel Corporation
+          vendor: Intel Corporation
+          physical id: 1e.7
+          bus info: pci@0000:ff:1e.7
+          version: 06
+          width: 32 bits
+          clock: 33MHz
+          configuration: latency=0
+  *-nvme1
+       description: NVMe device
+       product: SAMSUNG MZQL2960HCJR-00A07
+       physical id: 1
+       logical name: /dev/nvme1
+       version: GDC5302Q
+       serial: S64FNE0RA02710
+       configuration: nqn=nqn.1994-11.com.samsung:nvme:PM9A3:2.5-inch:S64FNE0RA02710 state=live
+     *-namespace:0
+          description: NVMe disk
+          physical id: 0
+          logical name: hwmon3
+     *-namespace:1
+          description: NVMe disk
+          physical id: 2
+          logical name: /dev/ng1n1
+     *-namespace:2
+          description: NVMe disk
+          physical id: 1
+          bus info: nvme@1:1
+          logical name: /dev/nvme1n1
+          configuration: wwid=eui.3634463052a027100025384500000001
+  *-input:0
+       product: Power Button
+       physical id: 2
+       logical name: input0
+       logical name: /dev/input/event0
+       capabilities: platform
+  *-input:1
+       product: Linux 5.4.62 with aspeed_vhub SMCI HID KM
+       physical id: 3
+       logical name: input1
+       logical name: /dev/input/event1
+       logical name: input1::capslock
+       logical name: input1::compose
+       logical name: input1::kana
+       logical name: input1::numlock
+       logical name: input1::scrolllock
+       capabilities: usb
+  *-input:2
+       product: Linux 5.4.62 with aspeed_vhub SMCI HID KM
+       physical id: 4
+       logical name: input2
+       logical name: /dev/input/event2
+       logical name: /dev/input/mouse0
+       capabilities: usb
+  *-network:0 DISABLED
+       description: Ethernet interface
+       physical id: 5
+       bus info: usb@1:11.2
+       logical name: usb0
+       serial: 8a:91:bf:91:63:e2
+       capabilities: ethernet physical
+       configuration: autonegotiation=off broadcast=yes driver=rndis_host driverversion=5.15.0-86-generic duplex=half firmware=RNDIS device link=no multicast=yes port=twisted pair
+  *-network:1 DISABLED
+       description: Ethernet interface
+       physical id: 6
+       bus info: pci@0000:01:00.0
+       logical name: eno1
+       serial: 3c:ec:ef:f9:bf:42
+       capacity: 10Gbit/s
+       capabilities: ethernet physical tp 100bt-fd 1000bt-fd 10000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=ixgbe driverversion=5.15.0-86-generic firmware=0x80001112, 1.2829.0 link=no multicast=yes port=twisted pair
