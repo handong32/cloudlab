@@ -1,0 +1,63 @@
+  *-network:0
+       description: Ethernet interface
+       product: Ethernet Controller X550
+       vendor: Intel Corporation
+       physical id: 0
+       bus info: pci@0000:3b:00.0
+       logical name: eno1
+       version: 01
+       serial: 00:5d:73:ef:45:56
+       size: 10Gbit/s
+       capacity: 10Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical tp 100bt-fd 1000bt-fd 10000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=ixgbe driverversion=5.15.0-86-generic duplex=full firmware=0x80000af9, 0.385.33 ip=128.105.144.246 latency=0 link=yes multicast=yes port=twisted pair speed=10Gbit/s
+       resources: irq:88 memory:b7800000-b7bfffff memory:b7c04000-b7c07fff memory:b8080000-b80fffff memory:b8400000-b84fffff memory:b8300000-b83fffff
+  *-network:1 DISABLED
+       description: Ethernet interface
+       product: Ethernet Controller X550
+       vendor: Intel Corporation
+       physical id: 0.1
+       bus info: pci@0000:3b:00.1
+       logical name: eno2
+       version: 01
+       serial: 00:5d:73:ef:45:57
+       capacity: 10Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical tp 100bt-fd 1000bt-fd 10000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=ixgbe driverversion=5.15.0-86-generic firmware=0x80000af9, 0.385.33 latency=0 link=no multicast=yes port=twisted pair
+       resources: irq:228 memory:b7400000-b77fffff memory:b7c00000-b7c03fff memory:b8000000-b807ffff memory:b8200000-b82fffff memory:b8100000-b81fffff
+  *-network:0
+       description: Ethernet interface
+       product: Ethernet Controller X710 for 10GbE SFP+
+       vendor: Intel Corporation
+       physical id: 0
+       bus info: pci@0000:5e:00.0
+       logical name: enp94s0f0
+       version: 01
+       serial: 3c:fd:fe:b3:15:88
+       size: 10Gbit/s
+       capacity: 10Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical fibre 10000bt-fd
+       configuration: autonegotiation=off broadcast=yes driver=i40e driverversion=5.15.0-86-generic duplex=full firmware=5.05 0x80002a3c 0.385.33 ip=192.168.1.10 latency=0 link=yes multicast=yes speed=10Gbit/s
+       resources: irq:36 memory:c4800000-c4ffffff memory:c5808000-c580ffff memory:c5e80000-c5efffff memory:c5400000-c57fffff memory:c5910000-c5a0ffff
+  *-network:1 DISABLED
+       description: Ethernet interface
+       product: Ethernet Controller X710 for 10GbE SFP+
+       vendor: Intel Corporation
+       physical id: 0.1
+       bus info: pci@0000:5e:00.1
+       logical name: enp94s0f1
+       version: 01
+       serial: 3c:fd:fe:b3:15:89
+       size: 10Gbit/s
+       capacity: 10Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical fibre 10000bt-fd
+       configuration: autonegotiation=off broadcast=yes driver=i40e driverversion=5.15.0-86-generic duplex=full firmware=5.05 0x80002a3c 0.385.33 latency=0 link=no multicast=yes speed=10Gbit/s
+       resources: irq:36 memory:c4000000-c47fffff memory:c5800000-c5807fff memory:c5e00000-c5e7ffff memory:c5000000-c53fffff memory:c5810000-c590ffff
