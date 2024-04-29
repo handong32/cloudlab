@@ -1,0 +1,128 @@
+  *-network:0 DISABLED
+       description: Ethernet interface
+       product: Ethernet Controller X710 for 10GBASE-T
+       vendor: Intel Corporation
+       physical id: 0
+       bus info: pci@0000:17:00.0
+       logical name: enp23s0f0
+       version: 02
+       serial: 3c:ec:ef:5f:2c:54
+       capacity: 10Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical 100bt-fd 1000bt-fd 10000bt-fd autonegotiation
+       configuration: autonegotiation=off broadcast=yes driver=i40e driverversion=5.15.0-86-generic firmware=8.10 0x80009661 1.2829.0 latency=0 link=no multicast=yes
+       resources: iomemory:201f0-201ef iomemory:201f0-201ef irq:16 memory:201ffd000000-201ffdffffff memory:201ffe808000-201ffe80ffff memory:a6080000-a60fffff memory:201ffe400000-201ffe7fffff memory:201ffe910000-201ffea0ffff
+  *-network:1 DISABLED
+       description: Ethernet interface
+       product: Ethernet Controller X710 for 10GBASE-T
+       vendor: Intel Corporation
+       physical id: 0.1
+       bus info: pci@0000:17:00.1
+       logical name: enp23s0f1
+       version: 02
+       serial: 3c:ec:ef:5f:2c:55
+       capacity: 10Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical 100bt-fd 1000bt-fd 10000bt-fd autonegotiation
+       configuration: autonegotiation=off broadcast=yes driver=i40e driverversion=5.15.0-86-generic firmware=8.10 0x80009661 1.2829.0 latency=0 link=no multicast=yes
+       resources: iomemory:201f0-201ef iomemory:201f0-201ef irq:16 memory:201ffc000000-201ffcffffff memory:201ffe800000-201ffe807fff memory:a6000000-a607ffff memory:201ffe000000-201ffe3fffff memory:201ffe810000-201ffe90ffff
+  *-network:0
+       description: Ethernet interface
+       product: MT2892 Family [ConnectX-6 Dx]
+       vendor: Mellanox Technologies
+       physical id: 0
+       bus info: pci@0000:4b:00.0
+       logical name: ens2f0np0
+       version: 00
+       serial: 08:c0:eb:8c:45:30
+       capacity: 40Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical fibre 1000bt-fd 10000bt-fd 25000bt-fd 40000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic duplex=full firmware=22.35.2000 (MT_0000000359) ip=192.168.1.12 latency=0 link=yes multicast=yes port=fibre
+       resources: iomemory:203f0-203ef irq:18 memory:203ffc000000-203ffdffffff memory:bba00000-bbafffff memory:203ffe800000-203ffeffffff
+  *-network:1 DISABLED
+       description: Ethernet interface
+       product: MT2892 Family [ConnectX-6 Dx]
+       vendor: Mellanox Technologies
+       physical id: 0.1
+       bus info: pci@0000:4b:00.1
+       logical name: ens2f1np1
+       version: 00
+       serial: 08:c0:eb:8c:45:31
+       capacity: 40Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical fibre 1000bt-fd 10000bt-fd 25000bt-fd 40000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic firmware=22.35.2000 (MT_0000000359) latency=0 link=no multicast=yes port=fibre
+       resources: iomemory:203f0-203ef irq:19 memory:203ffa000000-203ffbffffff memory:bb900000-bb9fffff memory:203ffe000000-203ffe7fffff
+  *-network:0 DISABLED
+       description: Ethernet interface
+       product: MT2892 Family [ConnectX-6 Dx]
+       vendor: Mellanox Technologies
+       physical id: 0
+       bus info: pci@0000:b1:00.0
+       logical name: enp177s0f0np0
+       version: 00
+       serial: b8:ce:f6:b0:31:6a
+       capacity: 40Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical fibre 1000bt-fd 10000bt-fd 25000bt-fd 40000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic firmware=22.32.2004 (DEL0000000027) latency=0 link=no multicast=yes port=fibre
+       resources: iomemory:207f0-207ef irq:18 memory:207ffc000000-207ffdffffff memory:e6600000-e66fffff
+  *-network:1 DISABLED
+       description: Ethernet interface
+       product: MT2892 Family [ConnectX-6 Dx]
+       vendor: Mellanox Technologies
+       physical id: 0.1
+       bus info: pci@0000:b1:00.1
+       logical name: enp177s0f1np1
+       version: 00
+       serial: b8:ce:f6:b0:31:6b
+       capacity: 40Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical 1000bt-fd 10000bt-fd 25000bt-fd 40000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic firmware=22.32.2004 (DEL0000000027) latency=0 link=no multicast=yes
+       resources: iomemory:207f0-207ef irq:19 memory:207ffa000000-207ffbffffff memory:e6500000-e65fffff
+  *-network:0
+       description: Ethernet interface
+       product: MT2894 Family [ConnectX-6 Lx]
+       vendor: Mellanox Technologies
+       physical id: 0
+       bus info: pci@0000:ca:00.0
+       logical name: ens1f0np0
+       version: 00
+       serial: b8:3f:d2:77:d1:fa
+       capacity: 25Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical fibre 1000bt-fd 10000bt-fd 25000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic duplex=full firmware=26.32.2004 (DEL0000000031) ip=128.105.146.48 latency=0 link=yes multicast=yes port=fibre
+       resources: iomemory:208f0-208ef irq:18 memory:208ffc000000-208ffdffffff memory:f1200000-f12fffff
+  *-network:1 DISABLED
+       description: Ethernet interface
+       product: MT2894 Family [ConnectX-6 Lx]
+       vendor: Mellanox Technologies
+       physical id: 0.1
+       bus info: pci@0000:ca:00.1
+       logical name: ens1f1np1
+       version: 00
+       serial: b8:3f:d2:77:d1:fb
+       capacity: 25Gbit/s
+       width: 64 bits
+       clock: 33MHz
+       capabilities: bus_master cap_list rom ethernet physical 1000bt-fd 10000bt-fd 25000bt-fd autonegotiation
+       configuration: autonegotiation=on broadcast=yes driver=mlx5_core driverversion=5.15.0-86-generic firmware=26.32.2004 (DEL0000000031) latency=0 link=no multicast=yes
+       resources: iomemory:208f0-208ef irq:19 memory:208ffa000000-208ffbffffff memory:f1100000-f11fffff
+  *-network DISABLED
+       description: Ethernet interface
+       physical id: c
+       bus info: usb@1:7.2
+       logical name: usb0
+       serial: 76:f0:72:d2:b4:6e
+       capabilities: ethernet physical
+       configuration: autonegotiation=off broadcast=yes driver=rndis_host driverversion=5.15.0-86-generic duplex=half firmware=RNDIS device link=no multicast=yes port=twisted pair
